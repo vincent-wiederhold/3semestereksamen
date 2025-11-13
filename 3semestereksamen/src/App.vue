@@ -1,9 +1,9 @@
 <script setup>
-import FooterBottom from './components/FooterBottom.vue';
+import HomeView from './views/HomeView.vue';
 </script>
 
 <template>
-  <FooterBottom/>
+  <HomeView/>
 </template>
 
 <style scoped>
