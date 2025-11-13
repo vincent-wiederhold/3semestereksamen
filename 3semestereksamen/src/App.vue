@@ -1,8 +1,9 @@
 <script setup>
+import FooterBottom from './components/FooterBottom.vue';
 </script>
 
 <template>
-Hejsa
+  <FooterBottom/>
 </template>
 
 <style scoped>
