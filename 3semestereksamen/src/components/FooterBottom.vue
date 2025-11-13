@@ -100,4 +100,8 @@ ul{
 .logo{
     margin: 20px 50px 20px 0px;
 }
+
+@media screen {
+    
+}
 </style>
