@@ -28,6 +28,7 @@ footer{
         flex-direction: column;
         padding-left: 50px;
         padding-top: 100px;
+        padding-bottom: 25px;
         list-style: none;
 
     }
@@ -46,7 +47,7 @@ footer{
 
         li{
             font-size: 16px;
-            padding: 5px;
+            padding: 10px 0px;
         }
     }
 
@@ -54,13 +55,12 @@ footer{
         margin: 20px 0px;
     }
 
-    .some font-awesome-icon {
-        font-size: 100px;
-        margin: 0 10px;
-    }
-
-
     .logo{
         margin: 20px 50px 20px 0px;
+    }
+
+    p{
+        font-family: f.$heading-secondary;
+        font-size: 12px;
     }
 }

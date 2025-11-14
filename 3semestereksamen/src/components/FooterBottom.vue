@@ -40,49 +40,4 @@
 </template>
 
 <style>
-
-
-.footercontent{
-    display: flex;
-    flex-direction: column;
-    padding-left: 50px;
-    list-style: none;
-
-}
-
-.footerbanner{
-    background-color: #000;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 12px;
-}
-
-ul{
-    padding: 20px 0px 20px 0px;
-    list-style: none;
-
-    li{
-        font-size: 16px;
-        padding: 5px;
-    }
-}
-
-.some{
-    margin: 20px 0px;
-}
-
-.some font-awesome-icon {
-    font-size: 100px;
-    margin: 0 10px;
-}
-
-
-.logo{
-    margin: 20px 50px 20px 0px;
-}
-
-@media screen {
-    
-}
 </style>
