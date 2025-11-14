@@ -2,11 +2,15 @@
 @use'_fonts.scss' as f;
 
 h1{
-    color: c.$primary-fontcolor;
+    color: c.$fontcolor-primary;
 }
 
 h3{
-    color: c.$primary-fontcolor;
+    color: c.$fontcolor-primary;
+    font-family: f.$heading-secondary;
+    font-size: 24px;
+    font-weight: bold;
+
 }
 
 h4{
@@ -17,11 +21,11 @@ h4{
 }
 
 h5{
-    color: c.$primary-fontcolor;
+    color: c.$fontcolor-primary;
 }
 
 p{
-    color: c.$secondary-fontcolor;
+    color: c.$fontcolor-secondary;
     font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
@@ -29,8 +33,8 @@ p{
 }
 
 body{
-    color: c.$secondary-fontcolor;
-    background-color: c.$primary-backgroundcolor;
+    color: c.$fontcolor-secondary;
+    background-color: c.$backgroundcolor-primary;
 }
 
 @media (min-width: 800px) {

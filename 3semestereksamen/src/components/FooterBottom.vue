@@ -44,10 +44,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Quicksand", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
 }
 
 .footercontent{

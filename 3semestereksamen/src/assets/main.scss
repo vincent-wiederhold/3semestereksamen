@@ -2,15 +2,16 @@
 @use'_fonts.scss' as f;
 
 footer{
-    color: c.$secondary-fontcolor;
+    color: c.$fontcolor-secondary;
     background-color: c.$footer-backgroundcolor;
 
     h4{
-        color: c.$secondary-fontcolor;
+        color: c.$fontcolor-secondary;
+        font-family: f.$heading-secondary;
     }
 
     li{
-        color: c.$secondary-fontcolor;
+        color: c.$fontcolor-secondary;
         font-family: "Quicksand", sans-serif;
         font-optical-sizing: auto;
         font-weight: 300;
