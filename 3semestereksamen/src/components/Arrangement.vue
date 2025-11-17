@@ -1,10 +1,8 @@
 <script setup>
 </script>
 <template>
+    <h1>Arrangementer</h1>
     <div class="row">
-        <div class="arrangement">
-        <h1>Arrangementer</h1>
-        </div>
         <div class="arrangement">
             <img src="../assets/julelys.webp" alt="">
             <p><b>14. November kl.17</b></p>

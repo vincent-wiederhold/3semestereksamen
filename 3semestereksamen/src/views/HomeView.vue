@@ -8,10 +8,9 @@ import FooterBottom from '../components/FooterBottom.vue';
   <div class="herosection">
     <img src="../assets/julelys.webp" alt="">
   </div>
-
-  <div class="section">
-    <h1>DANSK KUNSTHÅNDVÆRK MED SJÆL</h1>
-    <p>Hos Dina Vejling kan du gå på opdagelse i en verden af håndplukkede værker fra over 70 professionelle kunstnere. Find os i Brandts passage i Odense.</p>
+  <div>
+  <h1>DANSK KUNSTHÅNDVÆRK MED SJÆL</h1>
+  <p>Hos Dina Vejling kan du gå på opdagelse i en verden af håndplukkede værker fra over 70 professionelle kunstnere. Find os i Brandts passage i Odense.</p>
   </div>
   <div class="section">
     <h1>ÅBNINGSTIDER</h1>
