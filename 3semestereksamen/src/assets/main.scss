@@ -14,10 +14,17 @@ body{
 // Herobanner
 
 .herosection{
-    
+    color: red;
+    img{
+        width: 100%;
+        height: 200px;
+    }
 }
 
 // side intro
+.section{
+    color: red;
+}
 
 // her kommer åbningstider
 .section{
@@ -54,6 +61,10 @@ body{
 }
 
     // her kommer karussel
+
+.carrusel{
+    background-color: red;
+}
 
 footer{
     background-color: c.$footer-backgroundcolor;
@@ -113,6 +124,60 @@ footer{
 }
 
 @media (min-width: 800px) {
+
+    // Herobanner
+
+    .herosection{
+        color: red;
+        img{
+            width: 100%;
+            height: 200px;
+        }
+    }
+
+    // sideintro
+    .section{
+        color: red;
+    }
+
+    // her kommer åbningstider
+    .section{
+        width: 325px;
+        display: flex;
+        flex-direction: column;
+        margin: 40px auto;
+    }
+
+    // her er dividerimage
+    .dividerimage{
+        color: red;
+        img{
+            height: 100px;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+
+        // her kommer arrangementer
+
+    .row{
+        display: flex;
+    }
+    .arrangement{
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        margin: 20px auto;
+        img {
+            height: auto;
+        }
+
+        p{
+            padding: 20px 0px;
+        }
+    }
+
     footer{
         color: #fff;
 

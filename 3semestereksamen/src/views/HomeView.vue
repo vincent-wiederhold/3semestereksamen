@@ -32,7 +32,7 @@ import FooterBottom from '../components/FooterBottom.vue';
 
 
 <div class="dividerimage">
-<img src="../assets/julelys.webp" alt="">
+<img src="../assets/markus-winkler-JZyHRn8Cq3k-unsplash.webp" alt="">
 </div>
   <Arrangement/>
   <Carrusel/>
