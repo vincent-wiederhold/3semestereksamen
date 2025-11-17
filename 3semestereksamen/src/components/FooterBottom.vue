@@ -4,7 +4,7 @@
     <footer>
         <div class="footercontent">
             <div class="footerelements">
-                <h4>Åbningstider</h4>
+                <h4> 1 Åbningstider</h4>
                 <ul>
                     <li>Mandag - torsdag: kl. 11.00 - 17.30</li>
                     <li>Fredag: kl. 11.00 - 18.00</li>
@@ -12,7 +12,7 @@
                 </ul>
             </div>
             <div>
-                <h4>Konkaktoplysinger</h4>
+                <h4> 2 Konkaktoplysinger</h4>
                 <ul>
                     <li><font-awesome-icon icon="fa-solid fa-location-dot" class="fa-lg" /> Brandtspassage 30, 5000 Odense C</li>
                     <li><font-awesome-icon icon="fa-solid fa-envelope" class="fa-lg" /> info@dinavejling.dk</li>
@@ -20,7 +20,7 @@
                 </ul>
             </div>
             <div class="footerelements">
-                <h4>Informationer</h4>
+                <h4> 3 Informationer</h4>
                 <ul>
                     <li>Om Dina Vejling</li>
                     <li>Handelsbetingelser</li>
@@ -30,11 +30,14 @@
                 </ul>
             </div>
             <div class="footerelements">
-                <h4>Følg Dina Vejling</h4>
+                <h4> 4 Følg Dina Vejling</h4>
                 <div class="some">
                     <font-awesome-icon icon="fa-brands fa-instagram" class="fa-4x"/>
                     <font-awesome-icon icon="fa-brands fa-square-facebook" class="fa-4x"/>
                 </div>
+            </div>
+            <div class="footerelements">
+                <h4>5 logo</h4>
                 <img src="../assets/dinavejling.svg" alt="" class="logo">
             </div>
         </div>
