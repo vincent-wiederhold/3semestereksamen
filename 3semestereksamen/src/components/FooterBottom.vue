@@ -3,6 +3,7 @@
 <template>
     <footer>
         <div class="footercontent">
+            <div footer left></div>
             <div class="footerelements">
                 <h4> 1 Åbningstider</h4>
                 <ul>
