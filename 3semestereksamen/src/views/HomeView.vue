@@ -5,7 +5,11 @@ import FooterBottom from '../components/FooterBottom.vue';
 </script>
 
 <template>
-  <div class="aabningstider">
+  <div class="section">
+    <h1>DIT ONLINEKATALOG FOR DET DANSKE KUNSTHÅNDVÆRKSHJEM</h1>
+    <p>Dina Vejling sælger og udstiller 70 kunstneres moderne og danske kunsthåndværk. De er professionelt udannet og de fleste på en af vores designskoler i Danmark. Enkelte kunstnere er fra kunstakademiet eller tilsvarende skoler i udlandet.   Indehaver Dina Vejling har et bredt kendskab til kunstnerne og deres værker, da hun prioriterer at besøge dem på værkstederne rundt om i landet og udvælger det, som hun anser for det bedste, og bringer det hjem til Odense. Dette katalog er et lille overblik over, hvad vi har i butikken, men der er meget mere nede i butikken.</p>
+  </div>
+  <div class="section">
     <h1>Åbningstider</h1>
 
     <h4> Mandag - torsdag: kl. 11.00 - 17.30 <br>
