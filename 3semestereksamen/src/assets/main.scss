@@ -74,6 +74,9 @@ footer{
         .footercontent{
         display: flex;
         flex-direction: row;
+            .footerelements :nth-child(1){
+                order: 4;
+            }
         }
     }
 }
