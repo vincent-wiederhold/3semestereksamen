@@ -8,11 +8,14 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: c.$backgroundcolor-primary;
+}
 
     // her kommer arrangementer
 .arrangement{
-    img{
-        height: 200px;
+    img {
+        border-radius: 40px;
     }
 }
 
@@ -76,11 +79,9 @@ footer{
 }
 
 @media (min-width: 800px) {
-    body{
-        color: blue;
-    }
-
     footer{
+        color: #fff;
+
         .footercontent{
             flex-direction: row;
             .footerelements:nth-child(1){
