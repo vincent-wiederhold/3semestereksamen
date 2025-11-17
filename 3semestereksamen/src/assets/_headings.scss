@@ -3,6 +3,14 @@
 
 h1{
     color: c.$fontcolor-primary;
+    font-family: f.$heading-primary;
+}
+
+h2{
+    color: c.$fontcolor-primary;
+    font-family: f.$heading-primary;
+    font-weight: 700;
+    font-size: 48px;
 }
 
 h3{
@@ -10,11 +18,10 @@ h3{
     font-family: f.$heading-secondary;
     font-size: 24px;
     font-weight: bold;
-
 }
 
 h4{
-    color: c.$primary-fontcolor;
+    color: c.$fontcolor-primary;
     font-family: f.$heading-primary;
     font-size: 20px;
     font-weight: bold;

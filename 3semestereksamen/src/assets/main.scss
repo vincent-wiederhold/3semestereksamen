@@ -1,18 +1,28 @@
-@use'_colors.scss' as c;
-@use'_fonts.scss' as f;
+@use '_headings.scss';
+@use '_colors.scss' as c;
+@use '_fonts.scss' as f;
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
+    // her kommer arrangementer
+.arrangement{
+    img{
+        height: 200px;
+    }
+}
+
+    // her kommer karussel
+
 footer{
-    color: c.$fontcolor-secondary;
     background-color: c.$footer-backgroundcolor;
 
     h4{
         color: c.$fontcolor-secondary;
-        font-family: f.$heading-primary;
     }
 
     li{
