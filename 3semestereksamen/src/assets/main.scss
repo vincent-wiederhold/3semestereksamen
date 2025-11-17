@@ -22,12 +22,15 @@ body{
 }
 
 // side intro
-.section{
-    color: red;
+.landingpagesection{
+    width: 325px;
+    display: flex;
+    flex-direction: column;
+    margin: 40px auto;
 }
 
 // her kommer åbningstider
-.section{
+.aabningstidersection{
     width: 325px;
     display: flex;
     flex-direction: column;
@@ -135,8 +138,12 @@ footer{
         }
     }
 
+    .landingpagesection{
+        width: 90%;
+    }
+
     // sideintro
-    .section{
+    .aabningstidersection{
         flex-direction: row;
     }
 
