@@ -10,7 +10,7 @@ h2{
     color: c.$fontcolor-primary;
     font-family: f.$heading-primary;
     font-weight: 700;
-    font-size: 48px;
+    font-size: 20px;
 }
 
 h3{
@@ -32,7 +32,7 @@ h5{
 }
 
 p{
-    color: c.$fontcolor-secondary;
+    color: c.$fontcolor-primary;
     font-family: f.$heading-secondary;
     font-optical-sizing: auto;
     font-weight: 300;
@@ -45,7 +45,7 @@ body{
 }
 
 @media (min-width: 800px) {
-    
+
     h1{
         font-family: 'Museo', sans-serif;
         font-weight: 700;
