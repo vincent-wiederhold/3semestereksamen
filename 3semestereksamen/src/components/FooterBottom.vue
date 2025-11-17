@@ -11,7 +11,7 @@
                     <li>Sødag: Lukket</li>
                 </ul>
             </div>
-            <div>
+            <div class="footerelements">
                 <h4> 2 Konkaktoplysinger</h4>
                 <ul>
                     <li><font-awesome-icon icon="fa-solid fa-location-dot" class="fa-lg" /> Brandtspassage 30, 5000 Odense C</li>
