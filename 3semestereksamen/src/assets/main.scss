@@ -199,6 +199,17 @@ footer{
             flex-direction: row;
             justify-content: space-between;
             padding: 40px 20px;
+
+            .footerright{
+                display: flex;
+                justify-content: flex-start;
+            }
+
+            .footerleft{
+                display: flex;
+                justify-content: flex-end;
+            }
+
             .footerelements:nth-child(1){
                 order: 3;
             }
@@ -209,7 +220,7 @@ footer{
                 order: 4;
             }
             .footerelements:nth-child(4){
-                order: 2;
+                order: 4;
             }
             .footerelements:nth-child(5){
                 order: 0;
