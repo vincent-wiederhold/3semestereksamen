@@ -14,8 +14,8 @@
             <div class="footerelements">
                 <h4> 2 Konkaktoplysinger</h4>
                 <ul>
-                    <li><font-awesome-icon icon="fa-solid fa-location-dot" class="fa-lg" /> Brandtspassage 30, 5000 Odense C</li>
-                    <li><font-awesome-icon icon="fa-solid fa-envelope" class="fa-lg" /> info@dinavejling.dk</li>
+                    <li><font-awesome-icon icon="fa-solid fa-location-dot" class="fa-lg"/> Brandtspassage 30, 5000 Odense C</li>
+                    <li><font-awesome-icon icon="fa-solid fa-envelope" class="fa-lg"/> info@dinavejling.dk</li>
                     <li><font-awesome-icon icon="fa-solid fa-phone" class="fa-lg"/> +45 28 30 14 05</li>
                 </ul>
             </div>

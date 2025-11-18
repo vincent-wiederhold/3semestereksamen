@@ -11,6 +11,13 @@
 body{
     background-color: c.$backgroundcolor-primary;
 }
+
+button{
+    color: c.$fontcolor-secondary;
+    background-color: c.$button-backgrounddcolor;
+    padding: 20px 10px;
+    border: none;
+}
 // Herobanner
 
 .herosection{
