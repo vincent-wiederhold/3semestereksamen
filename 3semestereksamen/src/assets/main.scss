@@ -144,8 +144,13 @@ footer{
     // sideintro
     .aabningstidersection{
         flex-direction: row;
+        width: 90%;
+        img{
+                width: 500px;
+                height: auto;
+            }
         .grouping{
-            
+            color: red; 
         }
     }
 
@@ -192,6 +197,8 @@ footer{
 
         .footercontent{
             flex-direction: row;
+            justify-content: space-between;
+            padding: 40px 20px;
             .footerelements:nth-child(1){
                 order: 3;
             }
