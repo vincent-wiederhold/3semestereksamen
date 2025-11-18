@@ -13,19 +13,21 @@ import FooterBottom from '../components/FooterBottom.vue';
   <p>Hos Dina Vejling kan du gå på opdagelse i en verden af håndplukkede værker fra over 70 professionelle kunstnere. Find os i Brandts passage i Odense.</p>
   </div>
   <div class="aabningstidersection">
-    <h1>ÅBNINGSTIDER</h1>
+    <div class="grouping">
+      <h1>ÅBNINGSTIDER</h1>
 
-    <h4> Mandag - torsdag: kl. 11.00 - 17.30 <br>
-      Fredag: kl. 11.00 - 18.00 <br>
-      Lørdag: 10.30 - 14.00 <br>
-      Søndag: Lukket <br>
-    </h4>
-    <p>Dina Vejling - Dnask Kunsthåndværk</p>
-    <br>
-    <p>Brandts passage 30, 5000 Odense C <br>
-      Tlf. +45 28 30 14 05
-    </p>
-
+      <h4> Mandag - torsdag: kl. 11.00 - 17.30 <br>
+        Fredag: kl. 11.00 - 18.00 <br>
+        Lørdag: 10.30 - 14.00 <br>
+        Søndag: Lukket <br>
+      </h4>
+      <p>Dina Vejling - Dnask Kunsthåndværk</p>
+      <br>
+      <p>Brandts passage 30, 5000 Odense C <br>
+        Tlf. +45 28 30 14 05
+      </p>
+      <button>FIND BUTIKKEN PÅ KORT</button>
+    </div>
     <img src="../assets/dina_vejling_forside_1080x.webp" alt="">
   </div>
 
