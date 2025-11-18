@@ -3,7 +3,6 @@
 <template>
     <footer>
         <div class="footercontent">
-            <div class="footerleft"></div>
             <div class="footerelements">
                 <h4> 1 Åbningstider</h4>
                 <ul>
@@ -48,5 +47,6 @@
         </div>
     </footer>
 </template>
+
 <style>
 </style>
