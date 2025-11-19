@@ -14,7 +14,7 @@
             <li><a href="">Om os</a></li>
         </ul>
         <ul>
-            <li><a href=""><img src="" alt=""></a></li>
+            <li><font-awesome-icon icon="fa-solid fa-magnifying-glass" /></li>
             <li><a href=""><img src="" alt=""></a></li>
         </ul>
     </nav>
