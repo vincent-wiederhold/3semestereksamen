@@ -15,16 +15,15 @@ import FooterBottom from '../components/FooterBottom.vue';
   <div class="aabningstidersection">
     <div class="grouping">
       <h1>ÅBNINGSTIDER</h1>
-      <div class="aabningstider">
-        <h4>Mandag - torsdag: kl. 11.00 - 17.30</h4>
-        <h4>Fredag: kl. 11.00 - 18.00</h4>
-        <h4>Lørdag: 10.30 - 14.00</h4>
-        <h4>Søndag: Lukket</h4>
+      <h4>Mandag - torsdag: kl. 11.00 - 17.30</h4>
+      <h4>Fredag: kl. 11.00 - 18.00</h4>
+      <h4>Lørdag: 10.30 - 14.00</h4>
+      <h4>Søndag: Lukket</h4>
+      <div class="kontaktoplysninger">
+      <p>Dina Vejling - Dansk Kunsthåndværk</p><br>
+      <p>Brandts passage 30, 5000 Odense C</p>
+      <p>+45 28 30 14 05</p>
       </div>
-        <p>Dina Vejling - Dansk Kunsthåndværk</p>
-        <p>Brandts passage 30, 5000 Odense C <br>
-          Tlf. +45 28 30 14 05
-        </p>
       <button><font-awesome-icon icon="fa-solid fa-location-dot" class="fa-lg"/> FIND BUTIKKEN PÅ KORT</button>
     </div>
     <img src="../assets/dina_vejling_forside_1080x.webp" alt="">

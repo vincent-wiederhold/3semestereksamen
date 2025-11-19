@@ -42,8 +42,18 @@ button{
     display: flex;
     flex-direction: column;
     margin: 40px auto;
-}
+    h4{
+        padding: 5px 0px;
+    }
+    .kontaktoplysninger{
+        margin: 20px 0px;
+    }
+    
+    button{ 
+        margin: 20px 0px;
 
+    }
+}
 // her er dividerimage
 .dividerimage{
     color: red;
@@ -153,13 +163,18 @@ footer{
         flex-direction: row;
         justify-content: space-between;
         width: 90%;
+        .grouping{
+            color: red;
+            button{
+                color: red;
+                margin: 20px 0px;
+                padding: 20px;
+            }
+        }
         img{
                 width: 650px;
                 height: auto;
-            }
-        .grouping{
-            color: red; 
-        }
+        } 
     }
 
     // her kommer åbningstider
