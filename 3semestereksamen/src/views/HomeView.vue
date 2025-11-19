@@ -3,13 +3,52 @@ import Arrangement from '../components/Arrangement.vue';
 import Carrusel from '../components/Carrusel.vue';
 import FooterBottom from '../components/FooterBottom.vue';
 import Navbar from '@/components/Navbar.vue';
+import { ref } from "vue";
+
+const video = ref(null);
+const isPlaying = ref(false);
+
+const togglePlay = () => {
+  if (!video.value) return;
+
+  if (video.value.paused) {
+    video.value.play();
+  } else {
+    video.value.pause();
+  }
+};
+
+// Videoens eget play/pause-events opdaterer Vue state
+const handlePlay = () => (isPlaying.value = true);
+const handlePause = () => (isPlaying.value = false);
 </script>
+
 
 <template>
   <Navbar/>
-  <div class="herosection">
+  <!--<div class="herosection">
     <video src="../assets/dinahero.mp4" controls autoplay loop></video>
-  </div>
+  </div>-->
+  <figure id="videoContainer">
+
+    <video
+      ref="video"
+      loop
+      @play="handlePlay"
+      @pause="handlePause"
+    >
+      <source src="../assets/dinahero.mp4" type="video/mp4" />
+    </video>
+
+    <div class="controls">
+      <button @click="togglePlay">
+        <font-awesome-icon
+          :icon="isPlaying ? 'fa-solid fa-pause' : 'fa-solid fa-play'"
+        />
+      </button>
+    </div>
+
+  </figure>
   <div class="landingpagesection">
   <h1>DANSK KUNSTHÅNDVÆRK MED SJÆL</h1>
   <p>Hos Dina Vejling kan du gå på opdagelse i en verden af håndplukkede værker fra over 70 professionelle kunstnere. Find os i Brandts passage i Odense.</p>
