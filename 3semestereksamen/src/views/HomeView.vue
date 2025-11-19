@@ -1,5 +1,5 @@
 <script setup>
-import Arrangement from '../components/arrangement.vue';
+import Arrangement from '../components/Arrangement.vue';
 import Carrusel from '../components/Carrusel.vue';
 import FooterBottom from '../components/FooterBottom.vue';
 import Navbar from '@/components/Navbar.vue';
