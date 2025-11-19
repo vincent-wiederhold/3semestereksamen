@@ -26,28 +26,22 @@ const handlePause = () => (isPlaying.value = false);
 
 <template>
   <Navbar/>
-  <!--<div class="herosection">
-    <video src="../assets/dinahero.mp4" controls autoplay loop></video>
-  </div>-->
   <figure id="videoContainer">
-
     <video
       ref="video"
       loop
-      @play="handlePlay"
-      @pause="handlePause"
+      v-on:play="handlePlay"
+      v-on:pause="handlePause"
     >
       <source src="../assets/dinahero.mp4" type="video/mp4" />
     </video>
 
     <div class="controls">
-      <button @click="togglePlay">
-        <font-awesome-icon
-          :icon="isPlaying ? 'fa-solid fa-pause' : 'fa-solid fa-play'"
-        />
+      <button v-on:click="togglePlay">
+        <font-awesome-icon v-if="isPlaying" icon="fa-solid fa-pause" />
+        <font-awesome-icon v-else icon="fa-solid fa-play" />
       </button>
     </div>
-
   </figure>
   <div class="landingpagesection">
   <h1>DANSK KUNSTHÅNDVÆRK MED SJÆL</h1>
