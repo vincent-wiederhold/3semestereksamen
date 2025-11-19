@@ -3,12 +3,65 @@ import Arrangement from '../components/Arrangement.vue';
 import Carrusel from '../components/Carrusel.vue';
 import FooterBottom from '../components/FooterBottom.vue';
 import Navbar from '@/components/Navbar.vue';
+
+const playPause = document.getElementById("play-pause");
+// Hide the default controls
+video.controls = false;
+// Display the user defined video controls
+videoControls.setAttribute("data-state", "visible");
+function changeButtonState(type) {
+  if (type === "play-pause") {
+    // Play/Pause button
+    if (video.paused || video.ended) {
+      playPause.setAttribute("data-state", "play");
+    } else {
+      playPause.setAttribute("data-state", "pause");
+    }
+  } 
+}
+video.addEventListener("play", () => {
+  changeButtonState("play-pause");
+});
+
+video.addEventListener("pause", () => {
+  changeButtonState("play-pause");
+});
+
+stop.addEventListener("click", (e) => {
+  video.pause();
+  video.currentTime = 0;
+  progress.value = 0;
+
+  // Update the play/pause button's 'data-state' which allows the
+  // correct button image to be set via CSS
+  changeButtonState("play-pause");
+});
+
+playPause.addEventListener("click", (e) => {
+  if (video.paused || video.ended) {
+    video.play();
+  } else {
+    video.pause();
+  }
+});
 </script>
 
 <template>
   <Navbar/>
+
+<figure id="videoContainer">
+  <video id="video" controls> <source src="../assets/dinahero.mp4" type="video/mp4"/> </video>
+  <div id="video-controls" class="controls" data-state="hidden">
+    <button id="play-pause" type="button" data-state="play">Play/Pause</button>
+  </div>
+</figure>
+
   <div class="herosection">
-    <video src="../assets/dinahero.mp4" controls></video>
+    <video src="../assets/dinahero.mp4" controls autoplay loop></video>
+    <div class="controls">
+      <button>Play/Pause</button>
+
+    </div>
   </div>
   <div class="landingpagesection">
   <h1>DANSK KUNSTHÅNDVÆRK MED SJÆL</h1>
