@@ -14,7 +14,7 @@ body{
 
 button{
     color: c.$fontcolor-secondary;
-    background-color: c.$button-backgroundcolor;
+    background-color: c.$primary-color;
     padding: 20px 10px;
     border: none;
 }
@@ -22,13 +22,24 @@ button{
 // Navbar
 
 nav {
+    background-color: c.$primary-color;
+    font-family: f.$heading-secondary;
     display: flex;
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    ul {
+        list-style-type: none;
+    }
 
     #menu-punkter {
         display: flex;
 
         li {
-            padding: 20px;
+            
         }
     }
 
@@ -230,23 +241,43 @@ footer{
 
 @media (min-width: 800px) {
 
-    // Navbar
+// Navbar
 
-nav {
-    display: flex;
-
-    #menu-punkter {
+    nav {
         display: flex;
+        justify-content: space-between;
 
-        li {
-            padding: 20px;
+
+        #menu-logo {
+            padding: 15px;
+            display: block;
         }
-    }
 
-    #menu-icons {
-        display: flex;
+
+        #menu-items {
+            display: flex;
+            align-items: center;
+
+            #menu-punkter {
+            display: flex;
+
+
+                li {
+                    font-weight: 700;
+                    padding: 10px;
+                    
+                }
+            }
+
+            #menu-icons {
+                display: flex;
+                padding: 10px;
+            }
+        }
+
+
+        
     }
-}
 
 
 
