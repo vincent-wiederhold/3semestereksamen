@@ -35,6 +35,13 @@ nav {
         list-style-type: none;
     }
 
+    #menu-logo {
+        img {
+            display: block;
+        }
+    }
+
+
     #menu-punkter {
         display: flex;
 
@@ -250,7 +257,7 @@ footer{
 
         #menu-logo {
             padding: 15px;
-            display: block;
+            
         }
 
 
@@ -263,15 +270,20 @@ footer{
 
 
                 li {
+                    font-size: 18px;
                     font-weight: 700;
-                    padding: 10px;
+                    padding: 10px 20px;
                     
                 }
             }
 
             #menu-icons {
                 display: flex;
-                padding: 10px;
+                padding-right: 20px;
+
+                li {
+                    padding: 10px;
+                }
             }
         }
 
