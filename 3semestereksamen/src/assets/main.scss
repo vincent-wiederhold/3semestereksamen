@@ -171,6 +171,30 @@ footer{
 
 @media (min-width: 800px) {
 
+    // Navbar
+
+nav {
+    display: flex;
+
+    #menu-punkter {
+        display: flex;
+
+        li {
+            padding: 20px;
+        }
+    }
+
+    #menu-icons {
+        display: flex;
+    }
+}
+
+
+
+
+
+
+
     // Herobanner
 
     .herosection{
