@@ -6,7 +6,7 @@ import FooterBottom from '../components/FooterBottom.vue';
 
 <template>
   <div class="herosection">
-    <img src="../assets/julelys.webp" alt="">
+    <video src="../assets/dinahero.mp4" controls></video>
   </div>
   <div class="landingpagesection">
   <h1>DANSK KUNSTHÅNDVÆRK MED SJÆL</h1>
