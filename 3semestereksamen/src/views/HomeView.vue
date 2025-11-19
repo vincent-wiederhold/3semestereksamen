@@ -2,9 +2,11 @@
 import Arrangement from '../components/arrangement.vue';
 import Carrusel from '../components/Carrusel.vue';
 import FooterBottom from '../components/FooterBottom.vue';
+import Navbar from '@/components/Navbar.vue';
 </script>
 
 <template>
+  <Navbar/>
   <div class="herosection">
     <video src="../assets/dinahero.mp4" controls></video>
   </div>
