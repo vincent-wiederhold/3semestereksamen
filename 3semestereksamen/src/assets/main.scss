@@ -12,12 +12,14 @@ body{
     background-color: c.$backgroundcolor-primary;
 }
 
-button{
+button {
     color: c.$fontcolor-secondary;
     background-color: c.$primary-color;
     padding: 20px 10px;
     border: none;
 }
+
+//*******MOBILE*******
 
 // Navbar
 
@@ -25,6 +27,8 @@ nav {
     background-color: c.$primary-color;
     font-family: f.$heading-secondary;
     display: flex;
+    justify-content: space-between;
+    position: relative;
 
     a {
         text-decoration: none;
@@ -36,23 +40,64 @@ nav {
     }
 
     #menu-logo {
+        padding: 15px;
+
         img {
             display: block;
+            height: 35px;
         }
     }
 
 
-    #menu-punkter {
+    #menu-items-desktop {
+        display: none;
+    }
+
+    #menu-items-mobile {
         display: flex;
+        align-items: center;
+
+        #menu-icons {
+        display: flex;
+        align-items: center;
+        padding-right: 15px;
 
         li {
-            
+            padding: 15px;
+        }
+
+        #burgermenu {
+            padding: 0;
+        }
         }
     }
 
-    #menu-icons {
-        display: flex;
-    }
+    
+
+    #katalog-dropdown {
+            position: absolute;
+            z-index: 10;
+            background-color: #fff;
+            color: c.$fontcolor-primary;
+            top: 100%;
+            width: 100%;
+
+            .dropdown-kategori {
+                padding: 20px;
+
+                .kategori-navn {
+                    font-weight: 700;
+                    font-size: 18px;
+                    padding: 5px;
+                    margin-bottom: 10px;
+                }
+
+                .kategori-link {
+                    padding: 5px;
+                }
+            }
+
+        }
 }
 
 
@@ -246,6 +291,10 @@ footer{
     }
 }
 
+
+
+//*******DESKTOP*******
+
 @media (min-width: 800px) {
 
 // Navbar
@@ -257,34 +306,70 @@ footer{
 
         #menu-logo {
             padding: 15px;
+
+            img {
+            height: 50px;
+            }
             
         }
 
+        #menu-items-mobile {
+            display: none;
+        }
 
-        #menu-items {
+        #menu-items-desktop {
             display: flex;
             align-items: center;
 
             #menu-punkter {
             display: flex;
+            align-items: center;
 
 
-                li {
+                li, #katalog-knap {
                     font-size: 18px;
                     font-weight: 700;
                     padding: 10px 20px;
-                    
                 }
+
+                #katalog-knap {
+                    font-family: inherit;
+                    padding: 0;
+                    cursor: pointer;
+                }
+
+                
             }
 
             #menu-icons {
                 display: flex;
                 padding-right: 20px;
+                padding-left: 50px;
 
                 li {
                     padding: 10px;
                 }
             }
+        }
+
+        #katalog-dropdown {
+            display: flex;
+            left: 25%;
+            width: inherit;
+
+            .dropdown-kategori {
+                padding: 20px;
+
+                .kategori-navn {
+                    font-weight: 700;
+                    padding: 5px;
+                }
+
+                .kategori-link {
+                    padding: 5px;
+                }
+            }
+
         }
 
 
