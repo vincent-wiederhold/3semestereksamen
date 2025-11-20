@@ -9,11 +9,17 @@ const video = ref(null);
 const isPlaying = ref(false);
 
 const togglePlay = () => {
-  if (!video.value) return;
+  // Tjek om video-elementet eksisterer
+  if (video.value === null || video.value === undefined) {
+    return;
+  }
 
-  if (video.value.paused) {
+  // Hvis videoen er pauset, afspil den
+  if (video.value.paused === true) {
     video.value.play();
-  } else {
+  } 
+  // Ellers, hvis videoen spiller, pause den
+  else if (video.value.paused === false) {
     video.value.pause();
   }
 };
