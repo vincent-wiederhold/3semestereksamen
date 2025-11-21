@@ -32,14 +32,17 @@ const handlePause = () => (isPlaying.value = false);
 
 <template>
   <Navbar/>
-  <figure id="videoContainer">
+  <figure class="herovideo">
+    <!-- muted fordi video med lyd ikke må autoplayes-->
     <video
       ref="video"
       loop
+      autoplay
+      muted
       v-on:play="handlePlay"
       v-on:pause="handlePause"
     >
-      <source src="../assets/dinahero.mp4" type="video/mp4" />
+    <source src="../assets/dinahero.mp4" />
     </video>
 
     <div class="controls">
@@ -50,8 +53,8 @@ const handlePause = () => (isPlaying.value = false);
     </div>
   </figure>
   <div class="landingpagesection">
-  <h1>DANSK KUNSTHÅNDVÆRK MED SJÆL</h1>
-  <p>Hos Dina Vejling kan du gå på opdagelse i en verden af håndplukkede værker fra over 70 professionelle kunstnere. Find os i Brandts passage i Odense.</p>
+    <h1>DANSK KUNSTHÅNDVÆRK MED SJÆL</h1>
+    <p>Hos Dina Vejling kan du gå på opdagelse i en verden af håndplukkede værker fra over 70 professionelle kunstnere. Find os i Brandts passage i Odense.</p>
   </div>
   <div class="aabningstidersection">
     <div class="grouping">
