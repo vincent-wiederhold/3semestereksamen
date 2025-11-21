@@ -30,7 +30,7 @@ onMounted( () => {
 <template>
     <nav>
         <div id="menu-logo">
-            <img src="../assets/dinavejling.svg" alt="Dina Vejling logo">
+            <router-link to="/"><img src="../assets/dinavejling.svg" alt="Dina Vejling logo"></router-link>
         </div>
 
         <div id="menu-items-desktop">
