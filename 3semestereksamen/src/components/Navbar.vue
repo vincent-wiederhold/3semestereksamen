@@ -22,9 +22,6 @@ onMounted( () => {
     window.addEventListener("click", clickOutside);
 });
 
-
-
-
 </script>
 
 <template>
@@ -43,7 +40,7 @@ onMounted( () => {
                 <li><a href="">Arrangementer</a></li>
                 <li><a href="">Kunstnere</a></li>
                 <li><a href="">Galleri RUMMET</a></li>
-                <li><a href="">Om os</a></li>
+                <li><router-link to="/omos">Om os</router-link></li>
             </ul>
             <ul id="menu-icons">
                 <li><font-awesome-icon icon="fa-solid fa-magnifying-glass" /></li>
