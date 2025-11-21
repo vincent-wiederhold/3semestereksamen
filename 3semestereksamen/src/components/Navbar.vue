@@ -1,11 +1,29 @@
 <script setup>
-import { ref } from 'vue';
+import { ref, onMounted } from 'vue';
 
 const toggle = ref(false);
+const dropdown = ref(null);
+const katalogKnap = ref(null);
+const burgermenuKnap = ref(null);
 
 const dropdownToggle = () => {
     toggle.value = !toggle.value;
 };
+
+function clickOutside(klik) {
+    if (toggle.value && !dropdown.value.contains(klik.target) && !katalogKnap.value.contains(klik.target) && !burgermenuKnap.value.contains(klik.target)) {
+        toggle.value = false;
+    }
+    else return;
+};
+
+
+onMounted( () => {
+    window.addEventListener("click", clickOutside);
+});
+
+
+
 
 </script>
 
@@ -18,7 +36,7 @@ const dropdownToggle = () => {
         <div id="menu-items-desktop">
             <ul id="menu-punkter">
                 <li>
-                    <button @click="dropdownToggle" id="katalog-knap">
+                    <button @click="dropdownToggle" id="katalog-knap" ref="katalogKnap">
                         Katalog<font-awesome-icon icon="fa-solid fa-angle-down" />
                     </button>
                 </li>
@@ -38,17 +56,17 @@ const dropdownToggle = () => {
                 <li><font-awesome-icon icon="fa-solid fa-magnifying-glass" /></li>
                 <li><font-awesome-icon icon="fa-solid fa-cart-shopping" /></li>
                 <li>
-                    <button @click="dropdownToggle" id="burgermenu">
+                    <button @click="dropdownToggle" id="burgermenu" ref="burgermenuKnap">
                         <font-awesome-icon icon="fa-solid fa-bars" />
                     </button>
                 </li>
             </ul>
         </div>
 
-        <div id="katalog-dropdown" v-if="toggle">
+        <div id="katalog-dropdown" v-if="toggle" ref="dropdown">
             <ul class="dropdown-kategori">
                 <li class="kategori-navn">Keramik og glas</li>
-                <li class="kategori-link"><a href="">Krus og kopper</a></li><hr class="divider-line">
+                <li class="kategori-link"><a href="CategoriesView.vue">Krus og kopper</a></li><hr class="divider-line">
                 <li class="kategori-link">Skåle</li><hr class="divider-line">
                 <li class="kategori-link">Kander</li><hr class="divider-line">
                 <li class="kategori-link">Fade og tallerkener</li><hr class="divider-line">
