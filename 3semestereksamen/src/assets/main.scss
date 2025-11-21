@@ -473,12 +473,12 @@ footer{
     }
 
     footer{
-        color: #fff;
-
+        
         .footercontent{
             flex-direction: row;
             justify-content: space-between;
             padding: 40px 20px;
+            width: 90%;
 
             .footerright{
                 display: flex;
