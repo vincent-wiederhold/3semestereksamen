@@ -66,7 +66,7 @@ onMounted( () => {
         <div id="katalog-dropdown" v-if="toggle" ref="dropdown">
             <ul class="dropdown-kategori">
                 <li class="kategori-navn">Keramik og glas</li>
-                <li class="kategori-link"><a href="CategoriesView.vue">Krus og kopper</a></li><hr class="divider-line">
+                <li class="kategori-link"><router-link to="/kategorier">Krus og kopper</router-link></li><hr class="divider-line">
                 <li class="kategori-link">Skåle</li><hr class="divider-line">
                 <li class="kategori-link">Kander</li><hr class="divider-line">
                 <li class="kategori-link">Fade og tallerkener</li><hr class="divider-line">
