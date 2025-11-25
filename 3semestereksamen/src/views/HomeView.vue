@@ -64,9 +64,9 @@ const handlePause = () => (isPlaying.value = false);
       <h4>Lørdag: 10.30 - 14.00</h4>
       <h4>Søndag: Lukket</h4>
       <div class="kontaktoplysninger">
-      <p>Dina Vejling - Dansk Kunsthåndværk</p><br>
-      <p>Brandts passage 30, 5000 Odense C</p>
-      <p>+45 28 30 14 05</p>
+        <p>Dina Vejling - Dansk Kunsthåndværk</p><br>
+        <p>Brandts passage 30, 5000 Odense C</p>
+        <p>+45 28 30 14 05</p>
       </div>
       <button><font-awesome-icon icon="fa-solid fa-location-dot" class="fa-lg"/> FIND BUTIKKEN PÅ KORT</button>
     </div>

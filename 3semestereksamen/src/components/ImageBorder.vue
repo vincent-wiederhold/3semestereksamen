@@ -1,7 +1,11 @@
 <script setup>
 defineProps({
     src: String,
-    alt: String
+    alt: String,
+    width: {
+        type: String,
+        default: "600px"
+    }
 });
 </script>
 
@@ -20,7 +24,7 @@ defineProps({
             z-index: 2;
             display: block;
             height: 100%;
-            width: 600px;
+            width: v-bind(width);
             position: relative;
         }
     }
