@@ -26,8 +26,8 @@ getKunstner();
 </script>
 <template>
     <div class="carruselsection">
-        <h1>Populære kategorier</h1>
-        <p>Se større udvalg af alle kategorier i butikken</p>
+        <h1>Populære Kunstnere</h1>
+        <p>Kom ned i butikken og spørg ind til kunstnerne og deres værker eller læs mere ved at trykke på dem</p>
         <div class="kunstnere">
             <li v-for="(kunstnerData, index) in kunstner" :key="index">
                 <p>{{ kunstnerData.Kunstnernavn }}</p>

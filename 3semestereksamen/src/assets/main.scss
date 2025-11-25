@@ -468,8 +468,23 @@ footer{
     }
 
     .carruselsection{
-        width: 90%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    .kunstnere{
+        background-color: c.$backgroundcolor-primary;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        li{
+            list-style: none;
+            padding: 100px;
+            background-color: greenyellow;
+        }
     }
+}
 
     footer{
         
