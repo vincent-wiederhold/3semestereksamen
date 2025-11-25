@@ -8,33 +8,30 @@ defineProps({
 <template>
 <div class="imageborder">
     <img :src="src" :alt="alt">
-    <div class="border"></div>
 </div>
 </template>
 
 <style scoped>
-    .border {
-        position: relative;
-        top: 10px;
-        left: 10px;
-        border: 8px solid;
-        border-color: blueviolet;
-        height: 500px;
-        width: 500px;
-        z-index: 1;
-    }
-
     .imageborder {
-        margin: 100px;
+        position: relative;
+        display: inline-block;
+
         img {
             z-index: 2;
             display: block;
             height: 100%;
-            width: 700px;
+            width: 600px;
             position: relative;
-            
-
         }
     }
 
+    .imageborder::after {
+        position: absolute;
+        content: '';
+        top: 5%;
+        right: 5%;
+        border: 8px solid #AF3238;
+        height: 100%;
+        width: 100%;
+    }
 </style>
