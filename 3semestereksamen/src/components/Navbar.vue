@@ -38,7 +38,7 @@ onMounted( () => {
                     </button>
                 </li>
                 <li><a href="">Arrangementer</a></li>
-                <li><a href="">Kunstnere</a></li>
+                <li><router-link to="/kunstnere">Kunstnere</router-link></li>
                 <li><a href="">Galleri RUMMET</a></li>
                 <li><router-link to="/omos">Om os</router-link></li>
             </ul>
