@@ -1,14 +1,25 @@
 <script setup>
+import {ref } from 'vue';
+
+const kunstner = ref([]);
+
 const getKunstner = async () => {
-    fetch('https://semestereksamen-85cb6-default-rtdb.europe-west1.firebasedatabase.app/kunstner.json',{
-    method: 'GET'
-})
-    .then((response) => {
-        return response.json();
-    })
-    .then((res) => {
-        console.log(res);
-    })
+    try{
+        const res = await  fetch('https://semestereksamen-85cb6-default-rtdb.europe-west1.firebasedatabase.app/kunstner.json',{
+        method: 'GET',
+        });
+
+    const response = await res.json();
+
+    console.log('Firebase Response', response);
+
+    kunstner.value = Object.values(response);
+
+    console.log(response)
+    console.log('Kunstner Data:', kunstner.value);
+    } catch(error) {
+        console.error(error);
+    }
 };
 
 getKunstner();
@@ -17,12 +28,11 @@ getKunstner();
     <div class="carruselsection">
         <h1>Populære kategorier</h1>
         <p>Se større udvalg af alle kategorier i butikken</p>
-        <p><br><br><br>
-            Her hentes dataerne
-        </p>
+        <li v-for="(kunstnerData, index) in kunstner" :key="index">
+            <p>{{ kunstnerData.Kunstnernavn }}</p>
+            <p>{{ kunstnerData.Biografi }}</p>
+        </li>
     </div>
-
-    {{ kunstnere }}
 </template>
 <style>
 </style>
