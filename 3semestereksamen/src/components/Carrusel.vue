@@ -5,7 +5,7 @@ const kunstner = ref([]);
 
 const getKunstner = async () => {
     try{
-        const res = await  fetch('https://semestereksamen-85cb6-default-rtdb.europe-west1.firebasedatabase.app/kunstner.json',{
+        const res = await fetch('https://semestereksamen-85cb6-default-rtdb.europe-west1.firebasedatabase.app/kunstner.json',{
         method: 'GET',
         });
 
@@ -28,10 +28,12 @@ getKunstner();
     <div class="carruselsection">
         <h1>Populære kategorier</h1>
         <p>Se større udvalg af alle kategorier i butikken</p>
-        <li v-for="(kunstnerData, index) in kunstner" :key="index">
-            <p>{{ kunstnerData.Kunstnernavn }}</p>
-            <p>{{ kunstnerData.Biografi }}</p>
-        </li>
+        <div class="kunstnere">
+            <li v-for="(kunstnerData, index) in kunstner" :key="index">
+                <p>{{ kunstnerData.Kunstnernavn }}</p>
+                <p>{{ kunstnerData.Profession }}</p>
+            </li>
+        </div>
     </div>
 </template>
 <style>
