@@ -497,4 +497,39 @@ footer{
             }
         }
     }
+
+
+    //OM OS
+
+    .section-wrapper {
+        width: 75%;
+        margin: auto;
+    }
+
+    .image-wrapper {
+        width: 100%;
+        margin: 100px auto;
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+
+    .left {
+        left: 2.5%;
+    }
+
+    .right {
+        right: 2.5%;
+    }
+
+    .paragraf {
+        margin-top: 20px;
+    }
+
+    .heading {
+        margin-top: 50px;
+    }
+
+
+
 }
