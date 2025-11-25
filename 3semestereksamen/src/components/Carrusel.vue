@@ -23,6 +23,13 @@ const getKunstner = async () => {
 };
 
 getKunstner();
+
+const next = () => {
+    startIndex.value++;
+    if( startIndex.value >= kunstner.value.length) {
+        startIndex.value = 0;
+    }
+}
 </script>
 <template>
     <div class="carruselsection">
