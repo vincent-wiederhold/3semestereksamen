@@ -64,7 +64,7 @@ import galleriRummet from '@/assets/images/butik/galleri-rummet.jpg'
           <h3>Vores åbningstider er:</h3>
           <p class="aabningstid">Mandag - torsdag: kl. 11.00 - 17.30</p>
           <p class="aabningstid">Fredag: kl. 11.00 - 18.00</p>
-          <p class="aabningstid">Lørdag: 10.30 - 14.00</p>
+          <p class="aabningstid">Lørdag: kl. 10.30 - 14.00</p>
           <p class="aabningstid">Søndag: Lukket</p>
         </div>
         

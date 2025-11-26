@@ -5,28 +5,30 @@ h1{
     color: c.$fontcolor-primary;
     font-family: f.$heading-primary;
     font-weight: 700;
-    font-size: 25px;
+    font-size: 30px;
 }
 
 h2{
     color: c.$fontcolor-primary;
     font-family: f.$heading-primary;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 h3{
     color: c.$fontcolor-primary;
     font-family: f.$heading-secondary;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 h4{
     color: c.$fontcolor-primary;
     font-family: f.$heading-secondary;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 h5{
@@ -37,8 +39,9 @@ p{
     color: c.$fontcolor-primary;
     font-family: f.$heading-secondary;
     font-optical-sizing: auto;
-    font-weight: 300;
+    font-weight: 400;
     font-style: normal;
+    font-size: 16px;
 }
 
 body{
@@ -49,30 +52,22 @@ body{
 @media (min-width: 800px) {
 
     h1{
-        font-family: 'Museo', sans-serif;
-        font-weight: 700;
         font-size: 36px;
     }
 
     h2{
-        font-family: 'Museo', sans-serif;
-        font-weight: 700;
         font-size: 30px;
     }
 
     h3{
-        font-family: "Quicksand", sans-serif;
-        font-optical-sizing: auto;
-        font-style: normal;
-        font-weight: 700;
+        font-size: 24px;
+    }
+
+    h4{
         font-size: 24px;
     }
 
     p{
-        font-family: "Quicksand", sans-serif;
-        font-optical-sizing: auto;
-        font-style: normal;
-        font-weight: 400;
         font-size: 20px;
     }
 }

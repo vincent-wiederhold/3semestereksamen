@@ -3,19 +3,20 @@
 <template>
     <footer>
         <div class="footercontent">
-            <div class="footerelements">
-                <div class="hoejre">
-                    <h4> 1 Åbningstider</h4>
+            <div class="footerelements hoejre">
+                <div>
+                    <h4>Åbningstider</h4>
                     <ul>
                         <li>Mandag - torsdag: kl. 11.00 - 17.30</li>
                         <li>Fredag: kl. 11.00 - 18.00</li>
-                        <li>Sødag: Lukket</li>
+                        <li>Lørdag: kl. 10.30 - 14.00</li>
+                        <li>Søndag: Lukket</li>
                     </ul>
                 </div>
             </div>
-            <div class="footerelements">
-                <div class="venstre">
-                <h4> 2 Konkaktoplysinger</h4>
+            <div class="footerelements venstre">
+                <div class="kontaktoplysninger-container">
+                    <h4>Konkaktoplysinger</h4>
                     <ul>
                         <li><font-awesome-icon icon="fa-solid fa-location-dot" class="fa-lg"/> Brandtspassage 30, 5000 Odense C</li>
                         <li><font-awesome-icon icon="fa-solid fa-envelope" class="fa-lg"/> info@dinavejling.dk</li>
@@ -23,9 +24,9 @@
                     </ul>
                 </div>
             </div>
-            <div class="footerelements">
-                <div class="hoejre">
-                    <h4> 3 Informationer</h4>
+            <div class="footerelements hoejre">
+                <div>
+                    <h4>Informationer</h4>
                     <ul>
                         <li>Om Dina Vejling</li>
                         <li>Handelsbetingelser</li>
@@ -35,18 +36,17 @@
                     </ul>
                 </div>
             </div>
-            <div class="footerelements">
-                <div class="venstre">
-                <h4> 4 Følg Dina Vejling</h4>
+            <div class="footerelements venstre">
+                <div class="some-container">
+                <h4>Følg Dina Vejling</h4>
                     <div class="some">
                         <font-awesome-icon icon="fa-brands fa-instagram" class="fa-4x"/>
                         <font-awesome-icon icon="fa-brands fa-square-facebook" class="fa-4x"/>
                     </div>
                 </div>
             </div>
-            <div class="footerelements">
-                    <div class="venstre">
-                    <h4>5 logo</h4>
+            <div class="footerelements venstre">
+                    <div class="logo-container">
                     <img src="../assets/dinavejling.svg" alt="" class="logo">
                 </div>
             </div>
