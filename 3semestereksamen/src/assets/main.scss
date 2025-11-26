@@ -356,6 +356,7 @@ footer{
 
     .image-border-mobile {
         display: block;
+        margin: 50px 0;
     }
 
     .section-wrapper {
@@ -406,43 +407,32 @@ footer{
         }
     }
 
-    
-
-
-
     .kunstner-quadruple {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
         margin-left: 0;
         height: 250px;
+        margin-top: 30px;
 
         img {
             height: 125px;
             width: 125px;
             display: block;
-            
         }
-    }/*
-
-    .section-right {
-        margin-left: 125px;
     }
 
-    .section-left {
-        margin-right: 125px;
-    }
-*/
     .kontakt-billede {
-        width: 50%;
-        height: 700px;
+        width: 100%;
+        max-height: 700px;
         object-fit: cover;
         overflow: hidden;
 
         img {
             width: 100%;
+            display: block;
         }        
-    }/*
+    }
 
     .kontakt-blok {
         display: flex;
@@ -451,7 +441,11 @@ footer{
         align-items: center;
 
         background-color: #fff;
-        width: 50%;
+        width: 100%;
+
+        h2 {
+            margin-top: 20px;
+        }
 
         h3 {
             margin-top: 20px;
@@ -475,14 +469,16 @@ footer{
 
         .knap-margin {
             margin-top: 30px;
+            margin-bottom: 30px;
         }
     }
 
     .kontakt-section {
         display: flex;
+        flex-direction: column;
         border-top: 8px solid c.$secondary-color;
         border-bottom: 8px solid c.$secondary-color;
-    }*/
+    }
 
 
 //*******DESKTOP*******
@@ -789,7 +785,6 @@ button {
     }
 
     .image-wrapper {
-        width: 100%;
         margin: 100px auto;
         position: relative;
         display: flex;
@@ -798,14 +793,6 @@ button {
 
     .image-border-mobile {
         display: none;
-    }
-
-    .left {
-        left: 2.5%;
-    }
-
-    .right {
-        right: 2.5%;
     }
 
     .paragraf {
@@ -817,8 +804,7 @@ button {
     }
 
     .section-dual {
-        display: flex;
-        align-items: center;
+        flex-direction: row;
         padding-top: 50px;
 
         .heading {
@@ -831,17 +817,13 @@ button {
     }
 
     .kunstner-quadruple {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
         margin-left: 150px;
         height: 300px;
+        margin-top: 0;
 
         img {
             height: 150px;
-            width: 150px;
-            display: block;
-            
+            width: 150px;            
         }
     }
 
@@ -873,6 +855,10 @@ button {
         background-color: #fff;
         width: 50%;
 
+        h2 {
+            margin-top: 0;
+        }
+
         h3 {
             margin-top: 20px;
         }
@@ -895,11 +881,13 @@ button {
 
         .knap-margin {
             margin-top: 30px;
+            margin-bottom: 0;
         }
     }
 
     .kontakt-section {
         display: flex;
+        flex-direction: row;
         border-top: 8px solid c.$secondary-color;
         border-bottom: 8px solid c.$secondary-color;
     }
