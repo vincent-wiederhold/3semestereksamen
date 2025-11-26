@@ -1,15 +1,32 @@
 <script setup>
 import Navbar from '../components/Navbar.vue';
-import Carrusel from '../components/Carrusel.vue';
 import FooterBottom from '../components/FooterBottom.vue';
+import { ref } from 'vue';
 
+const kunstner = ref([]);
+
+const getKunstner = async () => {
+    try {
+        const res = await fetch('https://semestereksamen-85cb6-default-rtdb.europe-west1.firebasedatabase.app/kunstner.json', {
+            method: 'GET',
+        });
+        const response = await res.json();
+        kunstner.value = Object.values(response);
+    } catch (error) {
+        console.error(error);
+    }
+};
+
+getKunstner();
 </script>
-
 <template>
-<Navbar/>
-<Carrusel/>
-<FooterBottom/>
+    <Navbar />
+    <h1>Kunstnerne</h1>
+    <div class="artist">
+        <li v-for="kunstnerData in kunstner" :key="kunstnerData">
+        <p>{{ kunstnerData.Kunstnernavn }} - {{ kunstnerData.Profession }}</p>
+        <p>{{ kunstnerData.Biografi }}</p>
+        </li>
+    </div>
+    <FooterBottom />
 </template>
-
-<style>
-</style>

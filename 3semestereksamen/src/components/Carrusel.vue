@@ -62,12 +62,12 @@ const prev = () => {
         <p>Kom ned i butikken og spørg ind til kunstnerne og deres værker eller læs mere ved at trykke på dem</p>
         <div class="kunstnere">
             <ul v-if="kunstner.length > 0">
-                <button v-on:click="prev"><</button>
+                <button v-on:click="prev"><font-awesome-icon icon="fa-solid fa-chevron-left" class="fa-2x"/></button>
                 <li v-for="kunstnerData in visibleKunstnere" :key="kunstnerData">
                     <p>{{ kunstnerData.Kunstnernavn }}</p>
                     <p>{{ kunstnerData.Profession }}</p>
                 </li>
-                <button v-on:click="next">></button>
+                <button v-on:click="next"><font-awesome-icon icon="fa-solid fa-chevron-right" class="fa-2x"/></button>
             </ul>
         </div>
     </div>
