@@ -21,6 +21,10 @@ getKunstner();
 </script>
 <template>
     <Navbar />
+    <div class="hero kunstner-hero">
+    <h1 class="hero-text">Kunstnere</h1>
+  </div>
+
     <h1>Kunstnerne</h1>
     <div class="artist">
         <li v-for="kunstnerData in kunstner" :key="kunstnerData">
