@@ -57,6 +57,7 @@ const prev = () => {
 
 </script>
 <template>
+    <!--
     <div class="carruselsection">
         <h1>Populære Kunstnere</h1>
         <p>Kom ned i butikken og spørg ind til kunstnerne og deres værker eller læs mere ved at trykke på dem</p>
@@ -70,7 +71,7 @@ const prev = () => {
                 <button v-on:click="next"><font-awesome-icon icon="fa-solid fa-chevron-right" class="fa-2x"/></button>
             </ul>
         </div>
-    </div>
+    </div>-->
 </template>
 <style>
 </style>

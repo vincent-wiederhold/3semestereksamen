@@ -387,9 +387,26 @@ button {
             }
 
         }
+    }
 
 
+    .hero {
+        height: 40vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
         
+        display: flex;
+        justify-content: center;
+        align-items: center ;
+        
+        .hero-text {
+            color: c.$fontcolor-secondary;
+        }
+    }
+
+    .about-hero {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../assets/images/butik/dinavejling-butik-udenfor2.webp");
     }
 
 
@@ -568,9 +585,10 @@ button {
 
     //OM OS
 
+
     .section-wrapper {
         width: 75%;
-        margin: 150px auto;
+        margin: 125px auto;
     }
 
     .image-wrapper {
@@ -628,20 +646,66 @@ button {
     }
 
     .section-right {
-        margin-left: 150px;
+        margin-left: 125px;
     }
 
     .section-left {
-        margin-right: 150px;
+        margin-right: 125px;
     }
 
-    .aabningstider-billede {
+    .kontakt-billede {
+        width: 50%;
+        height: 700px;
+        object-fit: cover;
+        overflow: hidden;
 
         img {
-            height: 100%;
-            width: 500px;
+            width: 100%;
+            
+        }        
+    }
+
+    .kontakt-blok {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        background-color: #fff;
+        width: 50%;
+
+        h3 {
+            margin-top: 20px;
         }
+
+        .width {
+            width: 60%;
+        }
+
+        .adresse-blok {
+            margin: 10px 0;
+        }
+
+        .aabningstid {
+            margin-top: 5px;
+        }
+
+        .kontakt-oplysning {
+            margin-top: 10px;
+        }
+
+        .knap-margin {
+            margin-top: 30px;
+        }
+
+    }
+
+    .kontakt-section {
+        display: flex;
+        border-top: 8px solid c.$secondary-color;
+        border-bottom: 8px solid c.$secondary-color;
         
     }
+
 
 }

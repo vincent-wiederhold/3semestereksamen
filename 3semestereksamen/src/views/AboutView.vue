@@ -4,12 +4,13 @@ import FooterBottom from '@/components/FooterBottom.vue';
 import ImageBorder from '@/components/ImageBorder.vue';
 import butikIndenfor from '@/assets/images/butik/dinavejling-butik-indenfor.jpg';
 import galleriRummet from '@/assets/images/butik/galleri-rummet.jpg'
+
 </script>
 
 <template>
   <Navbar />
-  <div class="hero">
-    <h1>Om os</h1>
+  <div class="hero about-hero">
+    <h1 class="hero-text">Om os</h1>
   </div>
 
   <div class="section-wrapper">
@@ -47,42 +48,34 @@ import galleriRummet from '@/assets/images/butik/galleri-rummet.jpg'
   </div>
   
   <div>
-    <div>
-      <div>
-        <h2>KOM NED OG BESØG OS I BRANDTS PASSAGE!</h2>
-        <p>Vores butik ligger i hjertet af Odense i Latinerkvarteret ved gågaden.</p>
+    <div class="kontakt-section">
+      <div class="kontakt-blok">
+        <h2 class="width">KOM NED OG BESØG OS I BRANDTS PASSAGE!</h2>
+        <p class="paragraf width">Vores butik ligger i hjertet af Odense i Latinerkvarteret ved gågaden.</p>
 
-        <div>
-          <img src="" alt="">
-          <p>Brandts Passage 30, 5000 Odense C</p>
+        <div class="adresse-blok width">
+          <p class="paragraf"><font-awesome-icon icon="fa-solid fa-location-dot" class="fa-lg"/> Brandts Passage 30, 5000 Odense C</p>
         </div>
 
-        <div>
+        <div class="aabningstider-blok width">
           <h3>Vores åbningstider er:</h3>
-          <p>Mandag - torsdag: kl. 11.00 - 17.30</p>
-          <p>Fredag: kl. 11.00 - 18.00</p>
-          <p>Lørdag: 10.30 - 14.00</p>
-          <p>Søndag: Lukket</p>
+          <p class="aabningstid">Mandag - torsdag: kl. 11.00 - 17.30</p>
+          <p class="aabningstid">Fredag: kl. 11.00 - 18.00</p>
+          <p class="aabningstid">Lørdag: 10.30 - 14.00</p>
+          <p class="aabningstid">Søndag: Lukket</p>
         </div>
         
-        <div>
+        <div class="width">
           <h3>Eller kontakt os på:</h3>
-          <div>
-            <img src="" alt="">
-            <p>info@dinavejling.dk</p>
-          </div>
-          <div>
-            <img src="" alt="">
-            <p>+45 28 30 14 05</p>
-          </div>
+            <p class="kontakt-oplysning"><font-awesome-icon icon="fa-solid fa-envelope" /> info@dinavejling.dk</p>
+            <p class="kontakt-oplysning"><font-awesome-icon icon="fa-solid fa-phone" /> +45 28 30 14 05</p>
+          <button class="knap-margin"><font-awesome-icon icon="fa-solid fa-location-dot" class="fa-lg"/> FIND BUTIKKEN PÅ KORT</button>
         </div>
       </div>
 
-      <div class="aabningstider-billede">
+      <div class="kontakt-billede">
         <img src="../assets/images/butik/dinavejling-butik-udenfor1.webp" alt="">
       </div>
-
-      <button><font-awesome-icon icon="fa-solid fa-location-dot" class="fa-lg"/> FIND BUTIKKEN PÅ KORT</button>
     </div>
   <div>
 
@@ -91,7 +84,7 @@ import galleriRummet from '@/assets/images/butik/galleri-rummet.jpg'
 
   <div class="section-wrapper section-dual">
     <div >
-      <ImageBorder :src="butikIndenfor" alt="" width="600px"/>
+      <ImageBorder :src="butikIndenfor" alt="" width="500px"/>
     </div>
     <div class="section-right">
       <h2 class="heading">ARRANGEMENTER</h2>
@@ -109,7 +102,7 @@ import galleriRummet from '@/assets/images/butik/galleri-rummet.jpg'
       <button>SE GALLERI RUMMET</button>
     </div>
     <div >
-      <ImageBorder :src="galleriRummet" alt="" width="600px"/>
+      <ImageBorder :src="galleriRummet" alt="" width="500px"/>
     </div>
   </div>
 
