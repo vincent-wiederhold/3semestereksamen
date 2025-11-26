@@ -237,10 +237,15 @@ nav {
     flex-direction: column;
     margin: 20px auto;
     .individualarrangements{
-        img {
+        margin: 50px 0px;
+        .arrangementbillede{
             height: 200px;
+            object-fit: cover;
+            overflow: hidden;
+            img {
+                width: 100%;
+            }
         }
-
         p{
             padding: 20px 0px;
         }
@@ -675,11 +680,10 @@ button {
         
     .arrangementsection{
         width: 90%;
-        
-
         .row{
             display: flex;
             flex-wrap: wrap;
+            margin: 20px 0px;
         }
 
         
