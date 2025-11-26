@@ -41,6 +41,10 @@ const haandterPause = () => (afspillerVideo.value = false);
     <source src="../assets/dinahero.mp4" />
     </video>
 
+    <div class="hero-logo">
+      <img src="../assets/dinavejling.svg" alt="Dina Vejling logo">
+    </div>
+
     <div class="controls">
       <button v-on:click="togglePlay">
         <font-awesome-icon v-if="afspillerVideo" icon="fa-solid fa-pause" />
@@ -48,6 +52,8 @@ const haandterPause = () => (afspillerVideo.value = false);
       </button>
     </div>
   </figure>
+
+
   <div class="landingpagesection">
     <h1>DANSK KUNSTHÅNDVÆRK MED SJÆL</h1>
     <p>Hos Dina Vejling kan du gå på opdagelse i en verden af håndplukkede værker fra over 70 professionelle kunstnere. Find os i Brandts passage i Odense.</p>
