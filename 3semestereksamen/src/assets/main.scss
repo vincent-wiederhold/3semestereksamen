@@ -492,23 +492,32 @@ button {
     }
 
     .carruselsection{
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    margin: 20px auto;
-    .kunstnere{
-        background-color: c.$backgroundcolor-primary;
+        width: 90%;
         display: flex;
-        justify-content: space-between;
-        margin-top: 40px;
-        margin-bottom: 40px;
-        li{
-            list-style: none;
-            padding: 100px;
-            background-color: greenyellow;
+        flex-direction: column;
+        margin: 20px auto;
+        .kunstnere{
+            background-color: c.$backgroundcolor-primary;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+            margin-bottom: 40px;
+
+            ul{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                padding: 0;
+                margin: 0;
+                li{
+                    list-style: none;
+                    padding: 100px;
+                    background-color: rgba($color: #000, $alpha: 0.2);
+                }
+            }
         }
     }
-}
 
     footer{
         
