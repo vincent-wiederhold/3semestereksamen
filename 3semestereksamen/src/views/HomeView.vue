@@ -9,10 +9,6 @@ const video = ref(null);
 const isPlaying = ref(false);
 
 const togglePlay = () => {
-  // Tjek om video-elementet eksisterer
-  if (video.value === null || video.value === undefined) {
-    return;
-  }
 
   // Hvis videoen er pauset, afspil den
   if (video.value.paused === true) {
@@ -24,7 +20,7 @@ const togglePlay = () => {
   }
 };
 
-// Videoens eget play/pause-events opdaterer Vue state
+// Videoens egens play/pause-events der opdaterer Vue staten
 const handlePlay = () => (isPlaying.value = true);
 const handlePause = () => (isPlaying.value = false);
 </script>
