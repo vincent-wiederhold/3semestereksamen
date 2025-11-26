@@ -158,6 +158,19 @@ nav {
     width: 100%;
     max-width: 100%;
     overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+
+    .hero-logo {
+        position: absolute;
+
+        img {
+            height: 60px;
+        }
+    }
+
     video{
         width: 100%;
         height: auto;

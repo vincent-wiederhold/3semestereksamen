@@ -87,10 +87,10 @@ import galleriRummet from '@/assets/images/butik/galleri-rummet.jpg'
 
   <div class="section-wrapper section-dual">
     <div class="image-border-desktop">
-      <ImageBorder :src="butikIndenfor" alt="" width="500px"/>
+      <ImageBorder :src="butikIndenfor" alt="" width="500px" border="8px"/>
     </div>
     <div class="image-border-mobile">
-      <ImageBorder :src="butikIndenfor" alt="" width="200px"/>
+      <ImageBorder :src="butikIndenfor" alt="" width="200px" border="4px"/>
     </div>
 
     <div class="section-right">
@@ -109,10 +109,10 @@ import galleriRummet from '@/assets/images/butik/galleri-rummet.jpg'
       <button>SE GALLERI RUMMET</button>
     </div>
     <div class="image-border-desktop">
-      <ImageBorder :src="galleriRummet" alt="" width="500px"/>
+      <ImageBorder :src="galleriRummet" alt="" width="500px" border="8px"/>
     </div>
     <div class="image-border-mobile">
-      <ImageBorder :src="galleriRummet" alt="" width="200px"/>
+      <ImageBorder :src="galleriRummet" alt="" width="200px" border="4px"/>
     </div>
   </div>
 
