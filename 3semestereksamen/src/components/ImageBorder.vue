@@ -5,6 +5,10 @@ defineProps({
     width: {
         type: String,
         default: "600px"
+    },
+    border: {
+        type: String,
+        default: "8px"
     }
 });
 </script>
@@ -34,7 +38,7 @@ defineProps({
         content: '';
         top: 5%;
         right: 5%;
-        border: 8px solid #AF3238;
+        border: v-bind(border) solid #AF3238;
         height: 100%;
         width: 100%;
     }

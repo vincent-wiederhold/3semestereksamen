@@ -26,8 +26,11 @@ import galleriRummet from '@/assets/images/butik/galleri-rummet.jpg'
       befinder sig her. Man fornemmer næsten den fabrikation, der fandt sted i butikslokalerne for ikke så 
       mange år siden. På den måde forbinder Dina Vejling - Dansk Kunsthåndværk sig til det historiske, 
       hvilket er noget, som vi er meget stolte af.</p>
-    <div class="image-wrapper left">
-      <ImageBorder :src="butikIndenfor" alt="" width="700px"/>
+    <div class="image-wrapper left image-border-desktop">
+      <ImageBorder :src="butikIndenfor" alt="" width="700px" border="8px"/>
+    </div>
+    <div class="image-wrapper left image-border-mobile">
+      <ImageBorder :src="butikIndenfor" alt="" width="300px" border="4px"/>
     </div>
   </div>
 
@@ -83,9 +86,13 @@ import galleriRummet from '@/assets/images/butik/galleri-rummet.jpg'
   </div>
 
   <div class="section-wrapper section-dual">
-    <div >
+    <div class="image-border-desktop">
       <ImageBorder :src="butikIndenfor" alt="" width="500px"/>
     </div>
+    <div class="image-border-mobile">
+      <ImageBorder :src="butikIndenfor" alt="" width="200px"/>
+    </div>
+
     <div class="section-right">
       <h2 class="heading">ARRANGEMENTER</h2>
       <p class="paragraf">Flere gange om året afholdes der arrangementer i butikken. Det kan bl.a. være udstillinger, hvor der kommer en af vores 
@@ -101,8 +108,11 @@ import galleriRummet from '@/assets/images/butik/galleri-rummet.jpg'
         hvad kunstnerne også arbejder med. Det kan f.eks. være større installationer, gigantiske eller mikroskopiske værker eller andre projekter.</p>
       <button>SE GALLERI RUMMET</button>
     </div>
-    <div >
+    <div class="image-border-desktop">
       <ImageBorder :src="galleriRummet" alt="" width="500px"/>
+    </div>
+    <div class="image-border-mobile">
+      <ImageBorder :src="galleriRummet" alt="" width="200px"/>
     </div>
   </div>
 
