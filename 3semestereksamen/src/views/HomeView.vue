@@ -6,13 +6,9 @@ import Navbar from '@/components/Navbar.vue';
 import { ref } from "vue";
 
 const video = ref(null);
-const isPlaying = ref(false);
+const afspillerVideo = ref(false);
 
 const togglePlay = () => {
-  // Tjek om video-elementet eksisterer
-  if (video.value === null || video.value === undefined) {
-    return;
-  }
 
   // Hvis videoen er pauset, afspil den
   if (video.value.paused === true) {
@@ -24,9 +20,9 @@ const togglePlay = () => {
   }
 };
 
-// Videoens eget play/pause-events opdaterer Vue state
-const handlePlay = () => (isPlaying.value = true);
-const handlePause = () => (isPlaying.value = false);
+// Videoens egens play/pause-event der opdaterer Vue statuses
+const haandterPlay = () => (afspillerVideo.value = true);
+const haandterPause = () => (afspillerVideo.value = false);
 </script>
 
 
@@ -39,8 +35,8 @@ const handlePause = () => (isPlaying.value = false);
       loop
       autoplay
       muted
-      v-on:play="handlePlay"
-      v-on:pause="handlePause"
+      v-on:play="haandterPlay"
+      v-on:pause="haandterPause"
     >
     <source src="../assets/dinahero.mp4" />
     </video>
@@ -51,7 +47,7 @@ const handlePause = () => (isPlaying.value = false);
 
     <div class="controls">
       <button v-on:click="togglePlay">
-        <font-awesome-icon v-if="isPlaying" icon="fa-solid fa-pause" />
+        <font-awesome-icon v-if="afspillerVideo" icon="fa-solid fa-pause" />
         <font-awesome-icon v-else icon="fa-solid fa-play" />
       </button>
     </div>

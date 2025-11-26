@@ -27,8 +27,6 @@ const getKunstner = async () => {
     }
 };
 
-getKunstner();
-
 const next = () => {
     startIndex.value++;
     if( startIndex.value >= kunstner.value.length) {
@@ -36,14 +34,14 @@ const next = () => {
     }
 };
 
-const visibleKunstnere = computed(() => {
+const synligeKunstnere = computed(() => {
     const result = [];
     for (let i = 0; i< 3; i++){
-        let visibleIndex = startIndex.value + i;
-        if( visibleIndex >= kunstner.value.length) {
-            visibleIndex = visibleIndex - kunstner.value.length;
+        let synligeIndex = startIndex.value + i;
+        if( synligeIndex >= kunstner.value.length) {
+            synligeIndex = synligeIndex - kunstner.value.length;
         }
-        result.push(kunstner.value[visibleIndex]);
+        result.push(kunstner.value[synligeIndex]);
     }
     return result;
 });
@@ -52,18 +50,19 @@ const prev = () => {
     startIndex.value--;
     if (startIndex.value< 0) {
         startIndex.value = kunstner.value.length -1;
-    }
+    } 
 };
 
+getKunstner();
 </script>
 <template>
     <div class="carruselsection">
         <h1>Populære Kunstnere</h1>
-        <p>Kom ned i butikken og spørg ind til kunstnerne og deres værker eller læs mere ved at trykke på dem</p>
+        <p>Kom ned i butikken og spørg ind til kunstnerne samt deres værker.</p>
         <div class="kunstnere">
             <ul v-if="kunstner.length > 0">
                 <button v-on:click="prev"><font-awesome-icon icon="fa-solid fa-chevron-left" class="fa-2x"/></button>
-                <li v-for="kunstnerData in visibleKunstnere" :key="kunstnerData">
+                <li v-for="kunstnerData in synligeKunstnere" :key="kunstnerData">
                     <p>{{ kunstnerData.Kunstnernavn }}</p>
                     <p>{{ kunstnerData.Profession }}</p>
                 </li>
