@@ -739,21 +739,11 @@ button {
     footer{
         
         .footercontent{
-            flex-direction: row;
+            flex-direction: column;
             justify-content: space-between;
             padding: 40px 20px;
             width: 90%;
-
-            .footerright{
-                display: flex;
-                justify-content: flex-start;
-            }
-
-            .footerleft{
-                display: flex;
-                justify-content: flex-end;
-            }
-
+            
             .footerelements:nth-child(1){
                 order: 3;
             }
@@ -768,6 +758,16 @@ button {
             }
             .footerelements:nth-child(5){
                 order: 0;
+            }
+
+            .venstre{
+                background-color: red;
+            }
+
+            .hoejre{
+                background-color: blue;
+                display: flex;
+                justify-content: end;
             }
         }
     }

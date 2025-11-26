@@ -14,7 +14,7 @@
             </div>
             <div class="individualarrangements">
                 <div class="arrangementbillede">
-                    <img src="../assets/julelys.webp" alt="">
+                    <img src="../assets/Rikke_Lunnemann_CPH_sejren.webp" alt="">
                 </div>
                 <p><b>5. December kl. 11-18</b></p>
                 <h2>Rikkes smukke smykkeunivers og Sejr CPHs brogede lædervarer </h2>
