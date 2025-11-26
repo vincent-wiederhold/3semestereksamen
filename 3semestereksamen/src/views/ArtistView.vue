@@ -27,6 +27,7 @@ getKunstner();
         <p>{{ kunstnerData.Kunstnernavn }} - {{ kunstnerData.Profession }}</p>
         <p>{{ kunstnerData.Biografi }}</p>
         </li>
+        <p>her kan der skiftes til andet indhold</p>
     </div>
     <FooterBottom />
 </template>
