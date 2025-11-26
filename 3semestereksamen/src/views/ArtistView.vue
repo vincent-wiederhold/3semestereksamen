@@ -31,6 +31,7 @@ getKunstner();
         <h2>{{ kunstnerData.Kunstnernavn }}</h2>
         <h3>{{ kunstnerData.Profession }}</h3>
         <p>{{ kunstnerData.Biografi }}</p>
+        
         </li>
     </div>
 </div>

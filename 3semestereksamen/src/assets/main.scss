@@ -247,7 +247,7 @@ nav {
             }
         }
         p{
-            padding: 20px 0px;
+            padding: 10px 0px;
         }
     }
 }
@@ -688,8 +688,8 @@ button {
             display: flex;
             flex-direction: column;
             margin: 20px auto;
-            img {
-                height: auto;
+            .arrangementbillede {
+                height: 245px;
             }
 
             p{
