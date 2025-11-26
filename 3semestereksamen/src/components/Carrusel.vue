@@ -52,14 +52,14 @@ const prev = () => {
     startIndex.value--;
     if (startIndex.value< 0) {
         startIndex.value = kunstner.value.length -1;
-    }
+    } 
 };
 
 </script>
 <template>
     <div class="carruselsection">
         <h1>Populære Kunstnere</h1>
-        <p>Kom ned i butikken og spørg ind til kunstnerne og deres værker eller læs mere ved at trykke på dem</p>
+        <p>Kom ned i butikken og spørg ind til kunstnerne samt deres værker.</p>
         <div class="kunstnere">
             <ul v-if="kunstner.length > 0">
                 <button v-on:click="prev"><font-awesome-icon icon="fa-solid fa-chevron-left" class="fa-2x"/></button>
