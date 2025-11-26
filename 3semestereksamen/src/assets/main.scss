@@ -217,18 +217,38 @@ nav {
     flex-direction: column;
     margin: 20px auto;
     .kunstnere{
-        background-color: red;
         display: flex;
         justify-content: space-between;
         margin-top: 40px;
         margin-bottom: 40px;
+        justify-content: center;
+        ul{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        button{
+            display: flex;
+            justify-content: center;
+            background-color: c.$backgroundcolor-primary;
+            color: c.$primary-color;
+            rotate: 90deg;
+            width: 50px;
+        }
         li{
             list-style: none;
             padding: 100px;
-            background-color: greenyellow;
+            margin: 10px;
+            max-width: 275px;
+            background: rgba($color: #000, $alpha: 0.2);
         }
     }
 }
+
+
+
+
 
 footer{
     background-color: c.$footer-backgroundcolor;
@@ -523,10 +543,9 @@ button {
             margin-top: 40px;
             margin-bottom: 40px;
 
-            
-
             ul{
                 display: flex;
+                flex-direction: row;
                 justify-content: space-between;
                 align-items: center;
                 width: 100%;
@@ -535,6 +554,7 @@ button {
                 button{
                 background-color: c.$backgroundcolor-primary;
                 color: c.$primary-color;
+                rotate: none;
                 &:hover{
                     color: c.$secondary-color;
                 }
@@ -632,7 +652,6 @@ button {
         }
     }
 
-
     .kunstner-quadruple {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -709,10 +728,5 @@ button {
         border-bottom: 8px solid c.$secondary-color;
         
     }
-
-    .artist{
-        width: 90%;
-    }
-
 
 }
