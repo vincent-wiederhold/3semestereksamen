@@ -28,10 +28,10 @@ getKunstner();
     <h2>Hivlke ansigter gemmer sig bag værkerne</h2>
     <div class="artist">
         <li v-for="kunstnerData in kunstner" :key="kunstnerData">
-        <p>{{ kunstnerData.Kunstnernavn }} - {{ kunstnerData.Profession }}</p>
+        <h2>{{ kunstnerData.Kunstnernavn }}</h2>
+        <h3>{{ kunstnerData.Profession }}</h3>
         <p>{{ kunstnerData.Biografi }}</p>
         </li>
-        <p>her kan der skiftes til andet indhold</p>
     </div>
 </div>
     <FooterBottom />
