@@ -1,5 +1,5 @@
 <script setup>
-import {ref } from 'vue';
+import { computed, ref } from 'vue';
 
 const kunstner = ref([]);
 const startIndex = ref(0)
@@ -58,7 +58,7 @@ const prev = () => {
         <p>Kom ned i butikken og spørg ind til kunstnerne og deres værker eller læs mere ved at trykke på dem</p>
         <div class="kunstnere">
             <button v-on:click="prev"><</button>
-            <li v-for="(kunstnerData, index) in getVisibleKunstnere(s)" :key="index">
+            <li v-for="(kunstnerData, index) in getVisibleKunstnere()" :key="index">
                 <p>{{ kunstnerData.Kunstnernavn }}</p>
                 <p>{{ kunstnerData.Profession }}</p>
             </li>
