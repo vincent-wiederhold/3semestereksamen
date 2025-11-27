@@ -54,7 +54,10 @@ import Navbar from '@/components/Navbar.vue';
     <div class="andre-produkter section-wrapper">
         <h2>Andre produkter af samme kunstner</h2>
         <div>
-
+            <img src="..\assets\images\produkter\vaser\vase-hit-the-clay-clip-klap1.webp" alt="Sort vase">
+            <img src="..\assets\images\produkter\tekander\tekande-clip-klap.webp" alt="">
+            <img src="..\assets\images\produkter\vaser\vase-hit-the-clay-clip-klap2.webp" alt="">
+            <img src="..\assets\images\produkter\vaser\vase-hit-the-clay-clip-klap3.webp" alt="">
         </div>
     </div>
 

@@ -506,20 +506,39 @@ footer{
     .produkt-stort-billede {
         
         img {
-            max-height: 500px;
+            max-height: 800px;
             min-height: 200px;
             width: 100%;
+            display: block;
         }
     }
 
-
     .produkt-smaa-billeder {
+        display: flex;
+        flex-direction: row;
+        margin: 5px 0;
 
         img {
             height: 100px;
+            display: block;
+            margin-right: 5px;
         }
     }
 
+    .produkt-tekst {
+        margin: 30px 0;
+
+        p {
+            margin: 10px 0;
+        }
+    }
+
+    .produkt-kunstner-info {
+
+        p {
+            margin: 10px 0 30px 0;
+        }
+    }
 
 
 
