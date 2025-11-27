@@ -10,23 +10,23 @@ import Navbar from '@/components/Navbar.vue';
 
     </div>
 
-    <div class="produkt-info-billeder produkt-section-wrapper">
-        <div class="produkt-info produkt-element">
+    <div class="produkt-info-billeder produkt-section-wrapper hidden-on-desktop">
+        <div class="produkt-info">
             <h1>Flerfarvet krus</h1>
             <p class="produkt-af">Af Clip Klap</p>
             <p class="produkt-pris">275 kr.</p>
         </div>
-        <div class="produkt-stort-billede produkt-element">
+        <div class="produkt-stort-billede">
             <img src="../assets\images\produkter\kopper\krus-stor-lyseblå-claire-maria-lehmann-og-iben-harboe.webp" alt="">
         </div>
-        <div class="produkt-smaa-billeder produkt-element">
+        <div class="produkt-smaa-billeder">
             <img src="..\assets\images\produkter\kopper\krus-stor-lysegul-claire-maria-lehmann-og-iben-harboe.webp" alt="">
             <img src="..\assets\images\produkter\kopper\krus-stor-brun-claire-maria-lehmann-og-iben-harboe.webp" alt="">
             <img src="..\assets\images\produkter\kopper\krus-stor-lysegrøn-claire-maria-lehmann-og-iben-harboe.webp" alt="">
             <img src="..\assets\images\produkter\kopper\krus-stor-mørkegrøn-claire-maria-lehmann-og-iben-harboe.webp" alt="">
             <img src="..\assets\images\produkter\kopper\krus-stor-gul-claire-maria-lehmann-og-iben-harboe.webp" alt="">
         </div>
-        <div class="produkt-tekst produkt-element">
+        <div class="produkt-tekst">
             <p>Disse flerfarvet krus er lavet af kunstnerduen Claire Maria Lehmann og Iben Harboe, der til 
                 sammen hedder Clip Klap.</p>
             <p>Kruset er lavet af stentøj. For at få de forskellige farvenuancer er kruset blevet dyppet i 
@@ -35,9 +35,47 @@ import Navbar from '@/components/Navbar.vue';
             <p>Kruset kan fås i flere farver. Når kruset står i det rette lys, gengiver det et sart 
                 stjernemønster på bordet. En lille hemmelig og poetisk detalje.</p>
         </div>
-        <div class="produkt-knap produkt-element">
+        <div class="produkt-knap">
             <button>LÆG I KURV</button>
         </div>
+    </div>
+
+    <div class="produkt-info-billeder produkt-section-wrapper hidden-on-mobile">
+        
+        <div class="produkt-dual">
+            <div class="produkt-stort-billede">
+                <img src="../assets\images\produkter\kopper\krus-stor-lyseblå-claire-maria-lehmann-og-iben-harboe.webp" alt="">
+            </div>
+            <div class="produkt-tekst-container">
+                <div class="produkt-info">
+                    <h1>Flerfarvet krus</h1>
+                    <p class="produkt-af">Af Clip Klap</p>
+                    <p class="produkt-pris">275 kr.</p>
+                </div>
+                <div class="produkt-tekst">
+                    <p>Disse flerfarvet krus er lavet af kunstnerduen Claire Maria Lehmann og Iben Harboe, der til 
+                        sammen hedder Clip Klap.</p>
+                    <p>Kruset er lavet af stentøj. For at få de forskellige farvenuancer er kruset blevet dyppet i 
+                        glasur af flere omgange både i dyppeglasur og reaktiv glasur. Sidenhen er rillerne blevet 
+                        påført, og til sidst er kruset højbrændt.</p>
+                    <p>Kruset kan fås i flere farver. Når kruset står i det rette lys, gengiver det et sart 
+                        stjernemønster på bordet. En lille hemmelig og poetisk detalje.</p>
+                </div>
+                <div class="produkt-knap">
+                    <button>LÆG I KURV</button>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="produkt-smaa-billeder">
+            <img src="..\assets\images\produkter\kopper\krus-stor-lysegul-claire-maria-lehmann-og-iben-harboe.webp" alt="">
+            <img src="..\assets\images\produkter\kopper\krus-stor-brun-claire-maria-lehmann-og-iben-harboe.webp" alt="">
+            <img src="..\assets\images\produkter\kopper\krus-stor-lysegrøn-claire-maria-lehmann-og-iben-harboe.webp" alt="">
+            <img src="..\assets\images\produkter\kopper\krus-stor-mørkegrøn-claire-maria-lehmann-og-iben-harboe.webp" alt="">
+            <img src="..\assets\images\produkter\kopper\krus-stor-gul-claire-maria-lehmann-og-iben-harboe.webp" alt="">
+        </div>
+        
     </div>
 
     <div class="produkt-kunstner-info produkt-section-wrapper">
@@ -61,10 +99,10 @@ import Navbar from '@/components/Navbar.vue';
             <div class="andre-produkter-billede-container">
                 <img src="..\assets\images\produkter\tekander\tekande-clip-klap.webp" alt="Tekande">
             </div>
-            <div class="andre-produkter-billede-container mobil-display">
+            <div class="andre-produkter-billede-container hidden-on-mobile">
                 <img src="..\assets\images\produkter\vaser\vase-hit-the-clay-clip-klap2.webp" alt="">
             </div>
-            <div class="andre-produkter-billede-container mobil-display">
+            <div class="andre-produkter-billede-container hidden-on-mobile">
                 <img src="..\assets\images\produkter\vaser\vase-hit-the-clay-clip-klap3.webp" alt="">
             </div>
             <font-awesome-icon icon="fa-solid fa-chevron-right arrows" />
