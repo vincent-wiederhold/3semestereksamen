@@ -56,7 +56,7 @@ const haandterPause = () => (afspillerVideo.value = false);
 
   <div class="landingpagesection">
     <h1>DANSK KUNSTHÅNDVÆRK MED SJÆL</h1>
-    <p>Hos Dina Vejling kan du gå på opdagelse i en verden af håndplukkede værker fra over 70 professionelle kunstnere. Find os i Brandts passage i Odense.</p>
+    <p>Hos Dina Vejling kan du gå på opdagelse i en verden af unikke håndplukkede værker fra over 70 professionelle kunstnere. Find os i Brandts passage i latinerkvateret i Odense.</p>
   </div>
   <div class="aabningstidersection">
     <div class="grouping">
