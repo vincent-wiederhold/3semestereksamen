@@ -10,23 +10,23 @@ import Navbar from '@/components/Navbar.vue';
 
     </div>
 
-    <div class="produkt-info-billeder section-wrapper">
-        <div class="produkt-info">
+    <div class="produkt-info-billeder produkt-section-wrapper">
+        <div class="produkt-info produkt-element">
             <h1>Flerfarvet krus</h1>
             <p class="produkt-af">Af Clip Klap</p>
             <p class="produkt-pris">275 kr.</p>
         </div>
-        <div class="produkt-stort-billede">
+        <div class="produkt-stort-billede produkt-element">
             <img src="../assets\images\produkter\kopper\krus-stor-lyseblå-claire-maria-lehmann-og-iben-harboe.webp" alt="">
         </div>
-        <div class="produkt-smaa-billeder">
+        <div class="produkt-smaa-billeder produkt-element">
             <img src="..\assets\images\produkter\kopper\krus-stor-lysegul-claire-maria-lehmann-og-iben-harboe.webp" alt="">
             <img src="..\assets\images\produkter\kopper\krus-stor-brun-claire-maria-lehmann-og-iben-harboe.webp" alt="">
             <img src="..\assets\images\produkter\kopper\krus-stor-lysegrøn-claire-maria-lehmann-og-iben-harboe.webp" alt="">
             <img src="..\assets\images\produkter\kopper\krus-stor-mørkegrøn-claire-maria-lehmann-og-iben-harboe.webp" alt="">
             <img src="..\assets\images\produkter\kopper\krus-stor-gul-claire-maria-lehmann-og-iben-harboe.webp" alt="">
         </div>
-        <div class="produkt-tekst">
+        <div class="produkt-tekst produkt-element">
             <p>Disse flerfarvet krus er lavet af kunstnerduen Claire Maria Lehmann og Iben Harboe, der til 
                 sammen hedder Clip Klap.</p>
             <p>Kruset er lavet af stentøj. For at få de forskellige farvenuancer er kruset blevet dyppet i 
@@ -35,12 +35,12 @@ import Navbar from '@/components/Navbar.vue';
             <p>Kruset kan fås i flere farver. Når kruset står i det rette lys, gengiver det et sart 
                 stjernemønster på bordet. En lille hemmelig og poetisk detalje.</p>
         </div>
-        <div class="produkt-knap">
+        <div class="produkt-knap produkt-element">
             <button>LÆG I KURV</button>
         </div>
     </div>
 
-    <div class="produkt-kunstner-info section-wrapper">
+    <div class="produkt-kunstner-info produkt-section-wrapper">
         <h2>Om kunstneren</h2>
         <p>Clip Klap er navnet på kunstnerduen bestående af Claire Maria Lehmann og Iben Harboe. De har arbejdet 
             sammen siden 2003, hvor de skabte deres første værk sammen, nemlig en tepotte. Clip Klap begynder 
@@ -51,13 +51,23 @@ import Navbar from '@/components/Navbar.vue';
         <button>LÆS MERE OM KUNSTNEREN</button>
     </div>
 
-    <div class="andre-produkter section-wrapper">
+    <div class="andre-produkter produkt-section-wrapper">
         <h2>Andre produkter af samme kunstner</h2>
-        <div>
-            <img src="..\assets\images\produkter\vaser\vase-hit-the-clay-clip-klap1.webp" alt="Sort vase">
-            <img src="..\assets\images\produkter\tekander\tekande-clip-klap.webp" alt="">
-            <img src="..\assets\images\produkter\vaser\vase-hit-the-clay-clip-klap2.webp" alt="">
-            <img src="..\assets\images\produkter\vaser\vase-hit-the-clay-clip-klap3.webp" alt="">
+        <div class="andre-produkter-karrusel">
+            <font-awesome-icon icon="fa-solid fa-chevron-left arrows" />
+            <div class="andre-produkter-billede-container">
+                <img src="..\assets\images\produkter\vaser\vase-hit-the-clay-clip-klap1.webp" alt="Sort vase af keramik">
+            </div>
+            <div class="andre-produkter-billede-container">
+                <img src="..\assets\images\produkter\tekander\tekande-clip-klap.webp" alt="Tekande">
+            </div>
+            <div class="andre-produkter-billede-container mobil-display">
+                <img src="..\assets\images\produkter\vaser\vase-hit-the-clay-clip-klap2.webp" alt="">
+            </div>
+            <div class="andre-produkter-billede-container mobil-display">
+                <img src="..\assets\images\produkter\vaser\vase-hit-the-clay-clip-klap3.webp" alt="">
+            </div>
+            <font-awesome-icon icon="fa-solid fa-chevron-right arrows" />
         </div>
     </div>
 

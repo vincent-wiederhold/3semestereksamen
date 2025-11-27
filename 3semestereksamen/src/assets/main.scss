@@ -503,6 +503,11 @@ footer{
 
     // Produktside
 
+    .produkt-section-wrapper {
+        width: 80%;
+        margin: 50px auto;
+    } 
+
     .produkt-info {
         margin-bottom: 30px;
     }
@@ -525,6 +530,7 @@ footer{
         display: flex;
         flex-direction: row;
         margin: 5px 0;
+        flex-wrap: wrap;
 
         img {
             height: 100px;
@@ -546,6 +552,40 @@ footer{
         p {
             margin: 10px 0 30px 0;
         }
+    }
+
+    .andre-produkter {
+
+        .andre-produkter-karrusel {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            margin-top: 10px;
+
+
+            img {
+                min-height: 50px;
+                max-height: 200px;
+                width: 100%;
+                display: block;
+            }
+
+            .andre-produkter-billede-container {
+                margin: 10px;
+            }
+
+            .mobil-display {
+                display: none;
+            }
+
+            svg {
+                height: 5em;
+                color: c.$primary-color;
+            }
+        }
+
+        
     }
 
 
@@ -1037,4 +1077,134 @@ button {
             }
         }
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //Produktside
+
+
+    .produkt-section-wrapper {
+        width: 80%;
+        margin: 100px auto;
+    } 
+
+
+    .produkt-info-billeder {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2em;
+    }
+
+    .produkt-stort-billede {
+        grid-column: 1;
+        grid-row: 1;
+        
+    }
+
+    .produkt-info, .produkt-tekst, .produkt-knap {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+
+
+    .produkt-smaa-billeder {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+
+    /*
+
+    .produkt-info-billeder {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    
+
+    .produkt-element:nth-child(1) {
+        order: 1;
+        width: 50%;
+        height: 30%;
+    }
+
+    .produkt-element:nth-child(2) {
+        order: 0;
+        width: 50%;
+    }
+
+    .produkt-element:nth-child(3) {
+        order: 4;
+    }
+
+    .produkt-element:nth-child(4) {
+        order: 2;
+        width: 30%;
+    }
+
+    .produkt-element:nth-child(5) {
+        order: 3;
+    }*/
+
+    
+
+    .produkt-stort-billede {
+        
+        img {
+            max-height: 700px;
+            min-height: 400px;
+        }
+    }
+
+    .andre-produkter-karrusel {
+
+
+        .mobil-display {
+            display: block;
+        }
+    }
+
+    
 }
