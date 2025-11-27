@@ -127,27 +127,32 @@ nav {
 //Hero
 
 .hero {
-        height: 30vh;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        
-        display: flex;
-        justify-content: center;
-        align-items: center ;
-        
-        .hero-text {
-            color: c.$fontcolor-secondary;
-        }
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    
+    .hero-text {
+        color: c.$fontcolor-secondary;
     }
+}
 
-    .about-hero {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../assets/images/butik/dinavejling-butik-udenfor2.webp");
-    }
+.about-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../assets/images/butik/dinavejling-butik-udenfor2.webp");
+}
 
-    .kunstner-hero {
-         background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../assets/kunstnere.webp")
-    }
+.kunstner-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../assets/kunstnere.webp")
+}
+
+.krusogkopper-hero{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../assets/krusogkopper.webp")
+}
+
 
 
 //herovideo
@@ -1079,47 +1084,6 @@ button {
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     //Produktside
 
 
@@ -1207,4 +1171,66 @@ button {
     }
 
     
+
+    .kategoriprodukter{
+        margin: 80px 0px;
+    }
+
+    .kategoriproduktright{
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        
+
+        .kategoriprodukt-beskrivelse{
+            display: flex;
+            justify-content: center;
+            width: 50%;
+            .tekst{
+                display: flex;
+                flex-direction: column;
+                h2{
+                    margin-bottom: 5px;
+                }
+                p{
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        img{
+            height: 600px;
+            width: auto;
+        }
+    }
+
+    .kategoriproduktleft{
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+
+        .kategoriprodukt-beskrivelse{
+            display: flex;
+            justify-content: center;
+            width: 50%;
+            .tekst{
+                display: flex;
+                flex-direction: column;
+                h2{
+                    margin-bottom: 5px;
+                }
+                p{
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        img{
+            height: 600px;
+            width: auto;
+        }
+    }
+
+
 }
+

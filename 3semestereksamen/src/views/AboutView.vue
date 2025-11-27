@@ -3,7 +3,7 @@ import Navbar from '@/components/Navbar.vue';
 import FooterBottom from '@/components/FooterBottom.vue';
 import ImageBorder from '@/components/ImageBorder.vue';
 import butikIndenfor from '@/assets/images/butik/dinavejling-butik-indenfor.jpg';
-import galleriRummet from '@/assets/images/butik/galleri-rummet.jpg'
+import galleriRummet from '@/assets/images/butik/galleri-rummet.jpg';
 
 </script>
 
