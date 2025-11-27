@@ -1042,4 +1042,27 @@ button {
             }
         }
     }
+
+    .kategoriprodukt{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .kategoriprodukt-beskrivelse{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            align-items: flex-start;
+        }
+
+        .kategoriprodukt-billede{
+            width: 50%;
+        }
+
+
+        img{
+            height: 600px;
+            width: auto;
+        }
+    }
 }
