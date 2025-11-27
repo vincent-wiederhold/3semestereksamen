@@ -639,6 +639,7 @@ button {
 
     .landingpagesection{
         width: 90%;
+        margin: 35px auto 60px auto;
     }
 
     // sideintro
@@ -646,6 +647,7 @@ button {
         flex-direction: row;
         justify-content: space-between;
         width: 90%;
+        margin: 80px auto;
         .grouping{
             color: red;
             button{
@@ -683,6 +685,7 @@ button {
         
     .arrangementsection{
         width: 90%;
+        margin: 35px auto;
         .row{
             display: flex;
             flex-wrap: wrap;
