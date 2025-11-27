@@ -319,6 +319,14 @@ footer{
         list-style: none;
     }
 
+    a{
+        text-decoration: none;
+        color: c.$fontcolor-secondary;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+
     .footerbanner{
         background-color: #1E1E1E;
         display: flex;

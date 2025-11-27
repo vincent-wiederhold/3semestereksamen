@@ -28,7 +28,7 @@
                 <div>
                     <h4>Informationer</h4>
                     <ul>
-                        <li>Om Dina Vejling</li>
+                        <li><router-link to="/omos">Om Dina Vejling</router-link></li>
                         <li>Handelsbetingelser</li>
                         <li>Galleri Rummet</li>
                         <li>Arrengementer</li>
