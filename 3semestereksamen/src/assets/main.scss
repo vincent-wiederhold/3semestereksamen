@@ -488,6 +488,38 @@ footer{
     }
 
 
+
+    // Produktside
+
+    .produkt-info {
+        margin-bottom: 30px;
+    }
+    .produkt-pris {
+        font-size: 14px;
+        color: rgba($color: #000, $alpha: 0.5);
+    }
+
+    .produkt-stort-billede {
+        
+        img {
+            max-height: 500px;
+            min-height: 200px;
+            width: 100%;
+        }
+    }
+
+
+    .produkt-smaa-billeder {
+
+        img {
+            height: 100px;
+        }
+    }
+
+
+
+
+
 //*******DESKTOP*******
 
 @media (min-width: 800px) {
