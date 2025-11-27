@@ -5,6 +5,12 @@ import FooterBottom from '@/components/FooterBottom.vue';
 
 <template>
     <Navbar/>
+    <div class="hero krusogkopper-hero">
+    <h1 class="hero-text">Krus og kopper</h1>
+  </div>
+<div class="section-wrapper">
+    <h2>Hivlke ansigter gemmer sig bag værkerne</h2>
+</div>
     <FooterBottom/>
 </template>
 
