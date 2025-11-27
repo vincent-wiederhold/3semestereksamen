@@ -594,8 +594,31 @@ footer{
                 color: c.$primary-color;
             }
         }
+    }
 
-        
+    .breadcrumbs {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 20px 0 0 20px;
+
+        p {
+            font-size: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            &:hover{
+            text-decoration: underline;
+        }
+        }
+
+        .denne-side {
+            font-weight: 700;
+            margin-left: 10px;
+        }
     }
 
 
@@ -1122,60 +1145,38 @@ button {
             width: 50%;
             margin-left: 40px;
         }
-
     }
-
-
-    .produkt-info-billeder {
-        
-    }
-
-
-    .produkt-stort-billede {
-        
-        
-    }
-
-    .produkt-info, .produkt-tekst, .produkt-knap {
-        
-    }
-
-
-    
 
     .produkt-info {
-
+        margin-bottom: 20px;
     }
 
-
     .produkt-tekst {
-        
-        margin: 0;
+
+        margin: 30px 0;
 
         p {
             margin: 15px 0;
         }
     }
 
-    .produkt-knap {
-        
-    }
-
- 
-
-
     .produkt-smaa-billeder {
-        
+        display: flex;
+        flex-direction: row;
+        margin: 10px 0;
+        flex-wrap: wrap;
+
+        img {
+            height: 125px;
+            margin-right: 10px;
+        }
     }
 
+    .breadcrumbs {
+        margin: 50px 0 0 50px;
 
-    
-
-    .andre-produkter-karrusel {
-
-
-        .mobil-display {
-            display: block;
+        p {
+            font-size: 14px;
         }
     }
 
