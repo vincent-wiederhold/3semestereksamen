@@ -6,8 +6,9 @@ import Navbar from '@/components/Navbar.vue';
 
 <template>
     <Navbar />
-    <div>
-
+    <div class="breadcrumbs">
+        <p><RouterLink to="/">FORSIDE</RouterLink> / <RouterLink to="/kategorier">KERAMIK OG GLAS - KRUS OG KOPPER</RouterLink> /</p>
+        <p class="denne-side">FLERFARVET KRUS</p>
     </div>
 
     <div class="produkt-info-billeder produkt-section-wrapper hidden-on-desktop">
